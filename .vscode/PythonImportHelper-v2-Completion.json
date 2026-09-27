@@ -229,6 +229,55 @@
         "documentation": {}
     },
     {
+        "label": "pathlib",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "pathlib",
+        "description": "pathlib",
+        "detail": "pathlib",
+        "documentation": {}
+    },
+    {
+        "label": "Path",
+        "importPath": "pathlib",
+        "description": "pathlib",
+        "isExtraImport": true,
+        "detail": "pathlib",
+        "documentation": {}
+    },
+    {
+        "label": "Path",
+        "importPath": "pathlib",
+        "description": "pathlib",
+        "isExtraImport": true,
+        "detail": "pathlib",
+        "documentation": {}
+    },
+    {
+        "label": "Path",
+        "importPath": "pathlib",
+        "description": "pathlib",
+        "isExtraImport": true,
+        "detail": "pathlib",
+        "documentation": {}
+    },
+    {
+        "label": "Path",
+        "importPath": "pathlib",
+        "description": "pathlib",
+        "isExtraImport": true,
+        "detail": "pathlib",
+        "documentation": {}
+    },
+    {
+        "label": "Path",
+        "importPath": "pathlib",
+        "description": "pathlib",
+        "isExtraImport": true,
+        "detail": "pathlib",
+        "documentation": {}
+    },
+    {
         "label": "io",
         "kind": 6,
         "isExtraImport": true,
@@ -1476,6 +1525,48 @@
         "documentation": {}
     },
     {
+        "label": "numpy",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "numpy",
+        "description": "numpy",
+        "detail": "numpy",
+        "documentation": {}
+    },
+    {
+        "label": "logging",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "logging",
+        "description": "logging",
+        "detail": "logging",
+        "documentation": {}
+    },
+    {
+        "label": "functional",
+        "importPath": "torch.nn",
+        "description": "torch.nn",
+        "isExtraImport": true,
+        "detail": "torch.nn",
+        "documentation": {}
+    },
+    {
+        "label": "functional",
+        "importPath": "torch.nn",
+        "description": "torch.nn",
+        "isExtraImport": true,
+        "detail": "torch.nn",
+        "documentation": {}
+    },
+    {
+        "label": "tqdm",
+        "importPath": "tqdm.auto",
+        "description": "tqdm.auto",
+        "isExtraImport": true,
+        "detail": "tqdm.auto",
+        "documentation": {}
+    },
+    {
         "label": "typing",
         "kind": 6,
         "isExtraImport": true,
@@ -2294,29 +2385,12 @@
         "documentation": {}
     },
     {
-        "label": "numpy",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "numpy",
-        "description": "numpy",
-        "detail": "numpy",
-        "documentation": {}
-    },
-    {
         "label": "torchvision.transforms",
         "kind": 6,
         "isExtraImport": true,
         "importPath": "torchvision.transforms",
         "description": "torchvision.transforms",
         "detail": "torchvision.transforms",
-        "documentation": {}
-    },
-    {
-        "label": "functional",
-        "importPath": "torch.nn",
-        "description": "torch.nn",
-        "isExtraImport": true,
-        "detail": "torch.nn",
         "documentation": {}
     },
     {
@@ -6076,15 +6150,6 @@
         "importPath": "contextvars",
         "description": "contextvars",
         "detail": "contextvars",
-        "documentation": {}
-    },
-    {
-        "label": "logging",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "logging",
-        "description": "logging",
-        "detail": "logging",
         "documentation": {}
     },
     {
@@ -29088,47 +29153,6 @@
         "documentation": {}
     },
     {
-        "label": "pathlib",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "pathlib",
-        "description": "pathlib",
-        "detail": "pathlib",
-        "documentation": {}
-    },
-    {
-        "label": "Path",
-        "importPath": "pathlib",
-        "description": "pathlib",
-        "isExtraImport": true,
-        "detail": "pathlib",
-        "documentation": {}
-    },
-    {
-        "label": "Path",
-        "importPath": "pathlib",
-        "description": "pathlib",
-        "isExtraImport": true,
-        "detail": "pathlib",
-        "documentation": {}
-    },
-    {
-        "label": "Path",
-        "importPath": "pathlib",
-        "description": "pathlib",
-        "isExtraImport": true,
-        "detail": "pathlib",
-        "documentation": {}
-    },
-    {
-        "label": "Path",
-        "importPath": "pathlib",
-        "description": "pathlib",
-        "isExtraImport": true,
-        "detail": "pathlib",
-        "documentation": {}
-    },
-    {
         "label": "_io",
         "kind": 6,
         "isExtraImport": true,
@@ -34673,6 +34697,51 @@
         "documentation": {}
     },
     {
+        "label": "_AwA2CachedDataset",
+        "kind": 6,
+        "importPath": "modules.datasets",
+        "description": "modules.datasets",
+        "peekOfCode": "class _AwA2CachedDataset(torch.utils.data.Dataset):\n    \"\"\"Devuelve (imagen_tensor, label_clase, vector_atributos_85) desde el cache .npz.\"\"\"\n    def __init__(self, images, labels, attributes, transform=None):\n        self.images = images            # uint8 (N, S, S, 3)\n        self.labels = torch.as_tensor(labels, dtype=torch.long)\n        self.attributes = attributes    # float32 (50, 85), una fila por clase\n        self.transform = transform\n    def __len__(self):\n        return len(self.labels)\n    def __getitem__(self, index):",
+        "detail": "modules.datasets",
+        "documentation": {}
+    },
+    {
+        "label": "AwA2Dataset",
+        "kind": 6,
+        "importPath": "modules.datasets",
+        "description": "modules.datasets",
+        "peekOfCode": "class AwA2Dataset(Dataset):\n    \"\"\"\n    Animals with Attributes 2: 50 clases de animales, 37,322 imágenes, y una matriz\n    clase x atributo (50 x 85). Cada muestra es (imagen, label_clase, atributos_85):\n    el vector de atributos es el de la clase (todas las imágenes de una clase lo comparten).\n    attribute_type='continuous' -> predicate-matrix-continuous.txt normalizada de [0, 100] a [0, 1]\n    attribute_type='binary'     -> predicate-matrix-binary.txt ({0, 1})\n    \"\"\"\n    def __init__(self, image_size=32, root='./data/awa2', cache_size=64, attribute_type='continuous',\n                 source='hf', zip_path=None):",
+        "detail": "modules.datasets",
+        "documentation": {}
+    },
+    {
+        "label": "prepare_awa2_cache",
+        "kind": 2,
+        "importPath": "modules.datasets",
+        "description": "modules.datasets",
+        "peekOfCode": "def prepare_awa2_cache(root='./data/awa2', cache_size=64, test_fraction=0.2, seed=0,\n                       source='hf', zip_path=None):\n    \"\"\"\n    Construye un cache compacto de AwA2 en `root/awa2_{cache_size}.npz`:\n      - images: uint8 (N, cache_size, cache_size, 3) — lado corto a cache_size + center crop\n      - labels: int64 (N,) en el orden de classes.txt\n      - split:  uint8 (N,) 0 = train, 1 = test (estratificado por clase, seed fija)\n    source='hf'  -> streaming desde el espejo Parquet `quanda-bench-test/awa2`.\n                    (`randall-lab/awa2` es solo un loading script que `datasets>=4` ya no\n                    ejecuta, y que de todos modos baja el zip de 13.9 GB de ISTA.)",
+        "detail": "modules.datasets",
+        "documentation": {}
+    },
+    {
+        "label": "AWA2_HF_REPO",
+        "kind": 5,
+        "importPath": "modules.datasets",
+        "description": "modules.datasets",
+        "peekOfCode": "AWA2_HF_REPO = \"quanda-bench-test/awa2\"\nAWA2_BASE_URL = \"https://cvml.ista.ac.at/AwA2/AwA2-base.zip\"\ndef _awa2_read_base_files(root):\n    \"\"\"\n    Lee classes.txt, predicates.txt y predicate-matrix-{continuous,binary}.txt de\n    AwA2-base.zip (descargándolo si hace falta). El orden de las clases es el de\n    classes.txt, que es el mismo orden de filas de las matrices de predicados.\n    \"\"\"\n    import io\n    import urllib.request",
+        "detail": "modules.datasets",
+        "documentation": {}
+    },
+    {
+        "label": "AWA2_BASE_URL",
+        "kind": 5,
+        "importPath": "modules.datasets",
+        "description": "modules.datasets",
+        "peekOfCode": "AWA2_BASE_URL = \"https://cvml.ista.ac.at/AwA2/AwA2-base.zip\"\ndef _awa2_read_base_files(root):\n    \"\"\"\n    Lee classes.txt, predicates.txt y predicate-matrix-{continuous,binary}.txt de\n    AwA2-base.zip (descargándolo si hace falta). El orden de las clases es el de\n    classes.txt, que es el mismo orden de filas de las matrices de predicados.\n    \"\"\"\n    import io\n    import urllib.request\n    import zipfile",
+        "detail": "modules.datasets",
+        "documentation": {}
+    },
+    {
         "label": "effective_rank",
         "kind": 2,
         "importPath": "modules.effective_rank",
@@ -34706,6 +34775,15 @@
         "description": "modules.experiments",
         "peekOfCode": "def load_experiment(experiment_name, checkpoint_name=\"model_final.pt\", base_dir=\"experiments\"):\n    outdir = os.path.join(base_dir, experiment_name)\n    # Load the config\n    configfile = os.path.join(outdir, 'config.json')\n    with open(configfile, 'r') as f:\n        config = json.load(f)\n    # Load the metrics\n    jsonfile = os.path.join(outdir, 'metrics.json')\n    with open(jsonfile, 'r') as f:\n        data = json.load(f)",
         "detail": "modules.experiments",
+        "documentation": {}
+    },
+    {
+        "label": "save_fig",
+        "kind": 2,
+        "importPath": "modules.figures",
+        "description": "modules.figures",
+        "peekOfCode": "def save_fig(fig, stem, output_dir, tag=None, project_root=None):\n    \"\"\"Guarda `fig` como PNG en `output_dir`, con un nombre único y descriptivo\n    (`stem` + `tag`, p.ej. \"damage_heatmap_vit-with-15-epochs-AwA2.png\"), e imprime\n    el nombre de archivo usado — así queda claro en la celda con qué modelo/corrida\n    corresponde cada imagen guardada. Devuelve el `Path` guardado.\n    `project_root`, si se pasa, hace que se imprima la ruta relativa a él en vez de\n    la ruta absoluta completa (más legible en el notebook).\n    \"\"\"\n    output_dir = Path(output_dir)\n    output_dir.mkdir(parents=True, exist_ok=True)",
+        "detail": "modules.figures",
         "documentation": {}
     },
     {
@@ -34796,6 +34874,51 @@
         "description": "modules.model",
         "peekOfCode": "class ViTForClassfication(nn.Module):\n    \"\"\"\n    The ViT model for classification.\n    \"\"\"\n    def __init__(self, config):\n        super().__init__()\n        self.config = config\n        self.image_size = config[\"image_size\"]\n        self.hidden_size = config[\"hidden_size\"]\n        self.num_classes = config[\"num_classes\"]",
         "detail": "modules.model",
+        "documentation": {}
+    },
+    {
+        "label": "pairwise_similarity_matrix",
+        "kind": 2,
+        "importPath": "modules.similarity",
+        "description": "modules.similarity",
+        "peekOfCode": "def pairwise_similarity_matrix(vectors, kind):\n    \"\"\"vectors: array (H, D). kind: 'cosine' o 'pearson'. Devuelve (H, H) simétrica, diagonal 1.\"\"\"\n    H = vectors.shape[0]\n    M = np.eye(H)\n    for i in range(H):\n        for j in range(i + 1, H):\n            a, b = vectors[i], vectors[j]\n            if kind == \"cosine\":\n                denom = np.linalg.norm(a) * np.linalg.norm(b)\n                s = float(a @ b / denom) if denom > 0 else np.nan",
+        "detail": "modules.similarity",
+        "documentation": {}
+    },
+    {
+        "label": "offdiag_mean",
+        "kind": 2,
+        "importPath": "modules.similarity",
+        "description": "modules.similarity",
+        "peekOfCode": "def offdiag_mean(M):\n    \"\"\"Promedio de las entradas fuera de la diagonal (triángulo superior).\"\"\"\n    iu = np.triu_indices(M.shape[0], k=1)\n    return float(np.nanmean(M[iu]))",
+        "detail": "modules.similarity",
+        "documentation": {}
+    },
+    {
+        "label": "Trainer",
+        "kind": 6,
+        "importPath": "modules.training",
+        "description": "modules.training",
+        "peekOfCode": "class Trainer:\n    \"\"\"\n    The simple trainer.\n    \"\"\"\n    def __init__(self, model, optimizer, loss_fn, exp_name, device, config, is_interpretable,\n                 lambda_loss=0.1, batch_size=None, lr=None, dataset=None, log_indices=None,\n                 base_dir=\"experiments\"):\n        self.model = model.to(device)\n        self.optimizer = optimizer\n        self.loss_fn = loss_fn",
+        "detail": "modules.training",
+        "documentation": {}
+    },
+    {
+        "label": "interpretability_loss",
+        "kind": 2,
+        "importPath": "modules.training",
+        "description": "modules.training",
+        "peekOfCode": "def interpretability_loss(attention_maps):\n    # attention_maps: (B, H, P) — atención del CLS hacia los parches por cada cabeza\n    B, H, P = attention_maps.shape\n    # Normalización L2 antes del producto punto entre cabezas.\n    # Así la similitud queda en [-1, 1] (similitud coseno) y no depende de la magnitud\n    # absoluta del vector de atención — evita que el modelo reduzca la loss\n    # simplemente achicando los valores de atención.\n    attention_maps = F.normalize(attention_maps, p=2, dim=-1)\n    # Producto punto entre todos los pares de cabezas (i, j) posición a posición\n    mm = torch.einsum('bhp,bkp->bhkp', attention_maps, attention_maps)",
+        "detail": "modules.training",
+        "documentation": {}
+    },
+    {
+        "label": "logger",
+        "kind": 5,
+        "importPath": "modules.training",
+        "description": "modules.training",
+        "peekOfCode": "logger = logging.getLogger(\"vit_training\")\ndef interpretability_loss(attention_maps):\n    # attention_maps: (B, H, P) — atención del CLS hacia los parches por cada cabeza\n    B, H, P = attention_maps.shape\n    # Normalización L2 antes del producto punto entre cabezas.\n    # Así la similitud queda en [-1, 1] (similitud coseno) y no depende de la magnitud\n    # absoluta del vector de atención — evita que el modelo reduzca la loss\n    # simplemente achicando los valores de atención.\n    attention_maps = F.normalize(attention_maps, p=2, dim=-1)\n    # Producto punto entre todos los pares de cabezas (i, j) posición a posición",
+        "detail": "modules.training",
         "documentation": {}
     },
     {
