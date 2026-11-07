@@ -1,0 +1,51 @@
+{
+ "seed": 2,
+ "block": 4,
+ "variants": {
+  "unconstrained": {
+   "accuracy": 0.882856176735798,
+   "ablation_drop_b4_per_head_pts": [
+    0.3909928864843204,
+    0.2489730487927,
+    0.31472297364992796,
+    0.3772167117523262
+   ],
+   "ablation_drop_b4_mean_pts": 0.33297640516981863,
+   "ablation_gini_b4": 0.09170192759756061,
+   "damage_cosine_mean": 0.3907580917399007,
+   "split_same": 0.9579941877766056,
+   "split_cross": 0.28769266596460874,
+   "specialization_index": 0.6703015218119969
+  },
+  "constrained": {
+   "accuracy": 0.8770463881374612,
+   "ablation_drop_b4_per_head_pts": [
+    0.2455916240857614,
+    -0.13913936479310607,
+    0.6121631099088254,
+    0.12260795511471745
+   ],
+   "ablation_drop_b4_mean_pts": 0.21030583107904954,
+   "ablation_gini_b4": 0.4996806336228926,
+   "damage_cosine_mean": 0.0658121659259291,
+   "split_same": 0.9673073129382779,
+   "split_cross": 0.07578210595986758,
+   "specialization_index": 0.8915252069784103
+  },
+  "constrained_rank": {
+   "accuracy": 0.8831542430618174,
+   "ablation_drop_b4_per_head_pts": [
+    0.03268710550045073,
+    0.6114116821961724,
+    -0.005134756036473398,
+    0.2561116120629148
+   ],
+   "ablation_drop_b4_mean_pts": 0.22376891093076612,
+   "ablation_gini_b4": 0.5714385086254886,
+   "damage_cosine_mean": 0.07565418936326403,
+   "split_same": 0.8978851358056665,
+   "split_cross": 0.03765733514408424,
+   "specialization_index": 0.8602278006615823
+  }
+ }
+}

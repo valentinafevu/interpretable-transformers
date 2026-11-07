@@ -1,5 +1,379 @@
 [
     {
+        "label": "json",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "json",
+        "description": "json",
+        "detail": "json",
+        "documentation": {}
+    },
+    {
+        "label": "scanner",
+        "importPath": "json",
+        "description": "json",
+        "isExtraImport": true,
+        "detail": "json",
+        "documentation": {}
+    },
+    {
+        "label": "scanner",
+        "importPath": "json",
+        "description": "json",
+        "isExtraImport": true,
+        "detail": "json",
+        "documentation": {}
+    },
+    {
+        "label": "re",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "re",
+        "description": "re",
+        "detail": "re",
+        "documentation": {}
+    },
+    {
+        "label": "compile",
+        "importPath": "re",
+        "description": "re",
+        "isExtraImport": true,
+        "detail": "re",
+        "documentation": {}
+    },
+    {
+        "label": "IGNORECASE",
+        "importPath": "re",
+        "description": "re",
+        "isExtraImport": true,
+        "detail": "re",
+        "documentation": {}
+    },
+    {
+        "label": "escape",
+        "importPath": "re",
+        "description": "re",
+        "isExtraImport": true,
+        "detail": "re",
+        "documentation": {}
+    },
+    {
+        "label": "_compiler",
+        "importPath": "re",
+        "description": "re",
+        "isExtraImport": true,
+        "detail": "re",
+        "documentation": {}
+    },
+    {
+        "label": "_constants",
+        "importPath": "re",
+        "description": "re",
+        "isExtraImport": true,
+        "detail": "re",
+        "documentation": {}
+    },
+    {
+        "label": "_parser",
+        "importPath": "re",
+        "description": "re",
+        "isExtraImport": true,
+        "detail": "re",
+        "documentation": {}
+    },
+    {
+        "label": "compile",
+        "importPath": "re",
+        "description": "re",
+        "isExtraImport": true,
+        "detail": "re",
+        "documentation": {}
+    },
+    {
+        "label": "IGNORECASE",
+        "importPath": "re",
+        "description": "re",
+        "isExtraImport": true,
+        "detail": "re",
+        "documentation": {}
+    },
+    {
+        "label": "escape",
+        "importPath": "re",
+        "description": "re",
+        "isExtraImport": true,
+        "detail": "re",
+        "documentation": {}
+    },
+    {
+        "label": "_compiler",
+        "importPath": "re",
+        "description": "re",
+        "isExtraImport": true,
+        "detail": "re",
+        "documentation": {}
+    },
+    {
+        "label": "_constants",
+        "importPath": "re",
+        "description": "re",
+        "isExtraImport": true,
+        "detail": "re",
+        "documentation": {}
+    },
+    {
+        "label": "_parser",
+        "importPath": "re",
+        "description": "re",
+        "isExtraImport": true,
+        "detail": "re",
+        "documentation": {}
+    },
+    {
+        "label": "sys",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "sys",
+        "description": "sys",
+        "detail": "sys",
+        "documentation": {}
+    },
+    {
+        "label": "executable",
+        "importPath": "sys",
+        "description": "sys",
+        "isExtraImport": true,
+        "detail": "sys",
+        "documentation": {}
+    },
+    {
+        "label": "maxsize",
+        "importPath": "sys",
+        "description": "sys",
+        "isExtraImport": true,
+        "detail": "sys",
+        "documentation": {}
+    },
+    {
+        "label": "maxsize",
+        "importPath": "sys",
+        "description": "sys",
+        "isExtraImport": true,
+        "detail": "sys",
+        "documentation": {}
+    },
+    {
+        "label": "platform",
+        "importPath": "sys",
+        "description": "sys",
+        "isExtraImport": true,
+        "detail": "sys",
+        "documentation": {}
+    },
+    {
+        "label": "executable",
+        "importPath": "sys",
+        "description": "sys",
+        "isExtraImport": true,
+        "detail": "sys",
+        "documentation": {}
+    },
+    {
+        "label": "platform",
+        "importPath": "sys",
+        "description": "sys",
+        "isExtraImport": true,
+        "detail": "sys",
+        "documentation": {}
+    },
+    {
+        "label": "*",
+        "importPath": "sys",
+        "description": "sys",
+        "isExtraImport": true,
+        "detail": "sys",
+        "documentation": {}
+    },
+    {
+        "label": "*",
+        "importPath": "sys",
+        "description": "sys",
+        "isExtraImport": true,
+        "detail": "sys",
+        "documentation": {}
+    },
+    {
+        "label": "maxsize",
+        "importPath": "sys",
+        "description": "sys",
+        "isExtraImport": true,
+        "detail": "sys",
+        "documentation": {}
+    },
+    {
+        "label": "executable",
+        "importPath": "sys",
+        "description": "sys",
+        "isExtraImport": true,
+        "detail": "sys",
+        "documentation": {}
+    },
+    {
+        "label": "maxsize",
+        "importPath": "sys",
+        "description": "sys",
+        "isExtraImport": true,
+        "detail": "sys",
+        "documentation": {}
+    },
+    {
+        "label": "maxsize",
+        "importPath": "sys",
+        "description": "sys",
+        "isExtraImport": true,
+        "detail": "sys",
+        "documentation": {}
+    },
+    {
+        "label": "platform",
+        "importPath": "sys",
+        "description": "sys",
+        "isExtraImport": true,
+        "detail": "sys",
+        "documentation": {}
+    },
+    {
+        "label": "executable",
+        "importPath": "sys",
+        "description": "sys",
+        "isExtraImport": true,
+        "detail": "sys",
+        "documentation": {}
+    },
+    {
+        "label": "platform",
+        "importPath": "sys",
+        "description": "sys",
+        "isExtraImport": true,
+        "detail": "sys",
+        "documentation": {}
+    },
+    {
+        "label": "*",
+        "importPath": "sys",
+        "description": "sys",
+        "isExtraImport": true,
+        "detail": "sys",
+        "documentation": {}
+    },
+    {
+        "label": "*",
+        "importPath": "sys",
+        "description": "sys",
+        "isExtraImport": true,
+        "detail": "sys",
+        "documentation": {}
+    },
+    {
+        "label": "maxsize",
+        "importPath": "sys",
+        "description": "sys",
+        "isExtraImport": true,
+        "detail": "sys",
+        "documentation": {}
+    },
+    {
+        "label": "pathlib",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "pathlib",
+        "description": "pathlib",
+        "detail": "pathlib",
+        "documentation": {}
+    },
+    {
+        "label": "Path",
+        "importPath": "pathlib",
+        "description": "pathlib",
+        "isExtraImport": true,
+        "detail": "pathlib",
+        "documentation": {}
+    },
+    {
+        "label": "Path",
+        "importPath": "pathlib",
+        "description": "pathlib",
+        "isExtraImport": true,
+        "detail": "pathlib",
+        "documentation": {}
+    },
+    {
+        "label": "Path",
+        "importPath": "pathlib",
+        "description": "pathlib",
+        "isExtraImport": true,
+        "detail": "pathlib",
+        "documentation": {}
+    },
+    {
+        "label": "Path",
+        "importPath": "pathlib",
+        "description": "pathlib",
+        "isExtraImport": true,
+        "detail": "pathlib",
+        "documentation": {}
+    },
+    {
+        "label": "Path",
+        "importPath": "pathlib",
+        "description": "pathlib",
+        "isExtraImport": true,
+        "detail": "pathlib",
+        "documentation": {}
+    },
+    {
+        "label": "Path",
+        "importPath": "pathlib",
+        "description": "pathlib",
+        "isExtraImport": true,
+        "detail": "pathlib",
+        "documentation": {}
+    },
+    {
+        "label": "Path",
+        "importPath": "pathlib",
+        "description": "pathlib",
+        "isExtraImport": true,
+        "detail": "pathlib",
+        "documentation": {}
+    },
+    {
+        "label": "Path",
+        "importPath": "pathlib",
+        "description": "pathlib",
+        "isExtraImport": true,
+        "detail": "pathlib",
+        "documentation": {}
+    },
+    {
+        "label": "numpy",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "numpy",
+        "description": "numpy",
+        "detail": "numpy",
+        "documentation": {}
+    },
+    {
+        "label": "pandas",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "pandas",
+        "description": "pandas",
+        "detail": "pandas",
+        "documentation": {}
+    },
+    {
         "label": "torch",
         "kind": 6,
         "isExtraImport": true,
@@ -17,11 +391,116 @@
         "documentation": {}
     },
     {
+        "label": "optim",
+        "importPath": "torch",
+        "description": "torch",
+        "isExtraImport": true,
+        "detail": "torch",
+        "documentation": {}
+    },
+    {
         "label": "nn",
         "importPath": "torch",
         "description": "torch",
         "isExtraImport": true,
         "detail": "torch",
+        "documentation": {}
+    },
+    {
+        "label": "nn",
+        "importPath": "torch",
+        "description": "torch",
+        "isExtraImport": true,
+        "detail": "torch",
+        "documentation": {}
+    },
+    {
+        "label": "Ridge",
+        "importPath": "sklearn.linear_model",
+        "description": "sklearn.linear_model",
+        "isExtraImport": true,
+        "detail": "sklearn.linear_model",
+        "documentation": {}
+    },
+    {
+        "label": "GroupKFold",
+        "importPath": "sklearn.model_selection",
+        "description": "sklearn.model_selection",
+        "isExtraImport": true,
+        "detail": "sklearn.model_selection",
+        "documentation": {}
+    },
+    {
+        "label": "KFold",
+        "importPath": "sklearn.model_selection",
+        "description": "sklearn.model_selection",
+        "isExtraImport": true,
+        "detail": "sklearn.model_selection",
+        "documentation": {}
+    },
+    {
+        "label": "StandardScaler",
+        "importPath": "sklearn.preprocessing",
+        "description": "sklearn.preprocessing",
+        "isExtraImport": true,
+        "detail": "sklearn.preprocessing",
+        "documentation": {}
+    },
+    {
+        "label": "linear_cka",
+        "importPath": "modules.cka",
+        "description": "modules.cka",
+        "isExtraImport": true,
+        "detail": "modules.cka",
+        "documentation": {}
+    },
+    {
+        "label": "AwA2Dataset",
+        "importPath": "modules.datasets",
+        "description": "modules.datasets",
+        "isExtraImport": true,
+        "detail": "modules.datasets",
+        "documentation": {}
+    },
+    {
+        "label": "AwA2Dataset",
+        "importPath": "modules.datasets",
+        "description": "modules.datasets",
+        "isExtraImport": true,
+        "detail": "modules.datasets",
+        "documentation": {}
+    },
+    {
+        "label": "effective_rank",
+        "importPath": "modules.effective_rank",
+        "description": "modules.effective_rank",
+        "isExtraImport": true,
+        "detail": "modules.effective_rank",
+        "documentation": {}
+    },
+    {
+        "label": "ViTForClassfication",
+        "importPath": "modules.model",
+        "description": "modules.model",
+        "isExtraImport": true,
+        "detail": "modules.model",
+        "documentation": {}
+    },
+    {
+        "label": "ViTForClassfication",
+        "importPath": "modules.model",
+        "description": "modules.model",
+        "isExtraImport": true,
+        "detail": "modules.model",
+        "documentation": {}
+    },
+    {
+        "label": "argparse",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "argparse",
+        "description": "argparse",
+        "detail": "argparse",
         "documentation": {}
     },
     {
@@ -146,12 +625,93 @@
         "documentation": {}
     },
     {
-        "label": "pandas",
+        "label": "random",
         "kind": 6,
         "isExtraImport": true,
-        "importPath": "pandas",
-        "description": "pandas",
-        "detail": "pandas",
+        "importPath": "random",
+        "description": "random",
+        "detail": "random",
+        "documentation": {}
+    },
+    {
+        "label": "randrange",
+        "importPath": "random",
+        "description": "random",
+        "isExtraImport": true,
+        "detail": "random",
+        "documentation": {}
+    },
+    {
+        "label": "SystemRandom",
+        "importPath": "random",
+        "description": "random",
+        "isExtraImport": true,
+        "detail": "random",
+        "documentation": {}
+    },
+    {
+        "label": "SystemRandom",
+        "importPath": "random",
+        "description": "random",
+        "isExtraImport": true,
+        "detail": "random",
+        "documentation": {}
+    },
+    {
+        "label": "Random",
+        "importPath": "random",
+        "description": "random",
+        "isExtraImport": true,
+        "detail": "random",
+        "documentation": {}
+    },
+    {
+        "label": "randrange",
+        "importPath": "random",
+        "description": "random",
+        "isExtraImport": true,
+        "detail": "random",
+        "documentation": {}
+    },
+    {
+        "label": "SystemRandom",
+        "importPath": "random",
+        "description": "random",
+        "isExtraImport": true,
+        "detail": "random",
+        "documentation": {}
+    },
+    {
+        "label": "SystemRandom",
+        "importPath": "random",
+        "description": "random",
+        "isExtraImport": true,
+        "detail": "random",
+        "documentation": {}
+    },
+    {
+        "label": "Random",
+        "importPath": "random",
+        "description": "random",
+        "isExtraImport": true,
+        "detail": "random",
+        "documentation": {}
+    },
+    {
+        "label": "mlflow",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "mlflow",
+        "description": "mlflow",
+        "detail": "mlflow",
+        "documentation": {}
+    },
+    {
+        "label": "Trainer",
+        "importPath": "modules.training",
+        "description": "modules.training",
+        "isExtraImport": true,
+        "detail": "modules.training",
         "documentation": {}
     },
     {
@@ -204,77 +764,380 @@
         "documentation": {}
     },
     {
-        "label": "json",
+        "label": "math",
         "kind": 6,
         "isExtraImport": true,
-        "importPath": "json",
-        "description": "json",
-        "detail": "json",
+        "importPath": "math",
+        "description": "math",
+        "detail": "math",
         "documentation": {}
     },
     {
-        "label": "scanner",
-        "importPath": "json",
-        "description": "json",
+        "label": "cos",
+        "importPath": "math",
+        "description": "math",
         "isExtraImport": true,
-        "detail": "json",
+        "detail": "math",
         "documentation": {}
     },
     {
-        "label": "scanner",
-        "importPath": "json",
-        "description": "json",
+        "label": "pi",
+        "importPath": "math",
+        "description": "math",
         "isExtraImport": true,
-        "detail": "json",
+        "detail": "math",
         "documentation": {}
     },
     {
-        "label": "pathlib",
-        "kind": 6,
+        "label": "log",
+        "importPath": "math",
+        "description": "math",
         "isExtraImport": true,
-        "importPath": "pathlib",
-        "description": "pathlib",
-        "detail": "pathlib",
+        "detail": "math",
         "documentation": {}
     },
     {
-        "label": "Path",
-        "importPath": "pathlib",
-        "description": "pathlib",
+        "label": "exp",
+        "importPath": "math",
+        "description": "math",
         "isExtraImport": true,
-        "detail": "pathlib",
+        "detail": "math",
         "documentation": {}
     },
     {
-        "label": "Path",
-        "importPath": "pathlib",
-        "description": "pathlib",
+        "label": "pi",
+        "importPath": "math",
+        "description": "math",
         "isExtraImport": true,
-        "detail": "pathlib",
+        "detail": "math",
         "documentation": {}
     },
     {
-        "label": "Path",
-        "importPath": "pathlib",
-        "description": "pathlib",
+        "label": "e",
+        "importPath": "math",
+        "description": "math",
         "isExtraImport": true,
-        "detail": "pathlib",
+        "detail": "math",
         "documentation": {}
     },
     {
-        "label": "Path",
-        "importPath": "pathlib",
-        "description": "pathlib",
+        "label": "ceil",
+        "importPath": "math",
+        "description": "math",
         "isExtraImport": true,
-        "detail": "pathlib",
+        "detail": "math",
         "documentation": {}
     },
     {
-        "label": "Path",
-        "importPath": "pathlib",
-        "description": "pathlib",
+        "label": "sqrt",
+        "importPath": "math",
+        "description": "math",
         "isExtraImport": true,
-        "detail": "pathlib",
+        "detail": "math",
+        "documentation": {}
+    },
+    {
+        "label": "acos",
+        "importPath": "math",
+        "description": "math",
+        "isExtraImport": true,
+        "detail": "math",
+        "documentation": {}
+    },
+    {
+        "label": "cos",
+        "importPath": "math",
+        "description": "math",
+        "isExtraImport": true,
+        "detail": "math",
+        "documentation": {}
+    },
+    {
+        "label": "sin",
+        "importPath": "math",
+        "description": "math",
+        "isExtraImport": true,
+        "detail": "math",
+        "documentation": {}
+    },
+    {
+        "label": "tau",
+        "importPath": "math",
+        "description": "math",
+        "isExtraImport": true,
+        "detail": "math",
+        "documentation": {}
+    },
+    {
+        "label": "floor",
+        "importPath": "math",
+        "description": "math",
+        "isExtraImport": true,
+        "detail": "math",
+        "documentation": {}
+    },
+    {
+        "label": "isfinite",
+        "importPath": "math",
+        "description": "math",
+        "isExtraImport": true,
+        "detail": "math",
+        "documentation": {}
+    },
+    {
+        "label": "hypot",
+        "importPath": "math",
+        "description": "math",
+        "isExtraImport": true,
+        "detail": "math",
+        "documentation": {}
+    },
+    {
+        "label": "sqrt",
+        "importPath": "math",
+        "description": "math",
+        "isExtraImport": true,
+        "detail": "math",
+        "documentation": {}
+    },
+    {
+        "label": "fabs",
+        "importPath": "math",
+        "description": "math",
+        "isExtraImport": true,
+        "detail": "math",
+        "documentation": {}
+    },
+    {
+        "label": "exp",
+        "importPath": "math",
+        "description": "math",
+        "isExtraImport": true,
+        "detail": "math",
+        "documentation": {}
+    },
+    {
+        "label": "erf",
+        "importPath": "math",
+        "description": "math",
+        "isExtraImport": true,
+        "detail": "math",
+        "documentation": {}
+    },
+    {
+        "label": "tau",
+        "importPath": "math",
+        "description": "math",
+        "isExtraImport": true,
+        "detail": "math",
+        "documentation": {}
+    },
+    {
+        "label": "log",
+        "importPath": "math",
+        "description": "math",
+        "isExtraImport": true,
+        "detail": "math",
+        "documentation": {}
+    },
+    {
+        "label": "fsum",
+        "importPath": "math",
+        "description": "math",
+        "isExtraImport": true,
+        "detail": "math",
+        "documentation": {}
+    },
+    {
+        "label": "cos",
+        "importPath": "math",
+        "description": "math",
+        "isExtraImport": true,
+        "detail": "math",
+        "documentation": {}
+    },
+    {
+        "label": "pi",
+        "importPath": "math",
+        "description": "math",
+        "isExtraImport": true,
+        "detail": "math",
+        "documentation": {}
+    },
+    {
+        "label": "log",
+        "importPath": "math",
+        "description": "math",
+        "isExtraImport": true,
+        "detail": "math",
+        "documentation": {}
+    },
+    {
+        "label": "exp",
+        "importPath": "math",
+        "description": "math",
+        "isExtraImport": true,
+        "detail": "math",
+        "documentation": {}
+    },
+    {
+        "label": "pi",
+        "importPath": "math",
+        "description": "math",
+        "isExtraImport": true,
+        "detail": "math",
+        "documentation": {}
+    },
+    {
+        "label": "e",
+        "importPath": "math",
+        "description": "math",
+        "isExtraImport": true,
+        "detail": "math",
+        "documentation": {}
+    },
+    {
+        "label": "ceil",
+        "importPath": "math",
+        "description": "math",
+        "isExtraImport": true,
+        "detail": "math",
+        "documentation": {}
+    },
+    {
+        "label": "sqrt",
+        "importPath": "math",
+        "description": "math",
+        "isExtraImport": true,
+        "detail": "math",
+        "documentation": {}
+    },
+    {
+        "label": "acos",
+        "importPath": "math",
+        "description": "math",
+        "isExtraImport": true,
+        "detail": "math",
+        "documentation": {}
+    },
+    {
+        "label": "cos",
+        "importPath": "math",
+        "description": "math",
+        "isExtraImport": true,
+        "detail": "math",
+        "documentation": {}
+    },
+    {
+        "label": "sin",
+        "importPath": "math",
+        "description": "math",
+        "isExtraImport": true,
+        "detail": "math",
+        "documentation": {}
+    },
+    {
+        "label": "tau",
+        "importPath": "math",
+        "description": "math",
+        "isExtraImport": true,
+        "detail": "math",
+        "documentation": {}
+    },
+    {
+        "label": "floor",
+        "importPath": "math",
+        "description": "math",
+        "isExtraImport": true,
+        "detail": "math",
+        "documentation": {}
+    },
+    {
+        "label": "isfinite",
+        "importPath": "math",
+        "description": "math",
+        "isExtraImport": true,
+        "detail": "math",
+        "documentation": {}
+    },
+    {
+        "label": "hypot",
+        "importPath": "math",
+        "description": "math",
+        "isExtraImport": true,
+        "detail": "math",
+        "documentation": {}
+    },
+    {
+        "label": "sqrt",
+        "importPath": "math",
+        "description": "math",
+        "isExtraImport": true,
+        "detail": "math",
+        "documentation": {}
+    },
+    {
+        "label": "fabs",
+        "importPath": "math",
+        "description": "math",
+        "isExtraImport": true,
+        "detail": "math",
+        "documentation": {}
+    },
+    {
+        "label": "exp",
+        "importPath": "math",
+        "description": "math",
+        "isExtraImport": true,
+        "detail": "math",
+        "documentation": {}
+    },
+    {
+        "label": "erf",
+        "importPath": "math",
+        "description": "math",
+        "isExtraImport": true,
+        "detail": "math",
+        "documentation": {}
+    },
+    {
+        "label": "tau",
+        "importPath": "math",
+        "description": "math",
+        "isExtraImport": true,
+        "detail": "math",
+        "documentation": {}
+    },
+    {
+        "label": "log",
+        "importPath": "math",
+        "description": "math",
+        "isExtraImport": true,
+        "detail": "math",
+        "documentation": {}
+    },
+    {
+        "label": "fsum",
+        "importPath": "math",
+        "description": "math",
+        "isExtraImport": true,
+        "detail": "math",
+        "documentation": {}
+    },
+    {
+        "label": "functional",
+        "importPath": "torch.nn",
+        "description": "torch.nn",
+        "isExtraImport": true,
+        "detail": "torch.nn",
+        "documentation": {}
+    },
+    {
+        "label": "functional",
+        "importPath": "torch.nn",
+        "description": "torch.nn",
+        "isExtraImport": true,
+        "detail": "torch.nn",
         "documentation": {}
     },
     {
@@ -831,367 +1694,6 @@
         "documentation": {}
     },
     {
-        "label": "math",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "math",
-        "description": "math",
-        "detail": "math",
-        "documentation": {}
-    },
-    {
-        "label": "cos",
-        "importPath": "math",
-        "description": "math",
-        "isExtraImport": true,
-        "detail": "math",
-        "documentation": {}
-    },
-    {
-        "label": "pi",
-        "importPath": "math",
-        "description": "math",
-        "isExtraImport": true,
-        "detail": "math",
-        "documentation": {}
-    },
-    {
-        "label": "log",
-        "importPath": "math",
-        "description": "math",
-        "isExtraImport": true,
-        "detail": "math",
-        "documentation": {}
-    },
-    {
-        "label": "exp",
-        "importPath": "math",
-        "description": "math",
-        "isExtraImport": true,
-        "detail": "math",
-        "documentation": {}
-    },
-    {
-        "label": "pi",
-        "importPath": "math",
-        "description": "math",
-        "isExtraImport": true,
-        "detail": "math",
-        "documentation": {}
-    },
-    {
-        "label": "e",
-        "importPath": "math",
-        "description": "math",
-        "isExtraImport": true,
-        "detail": "math",
-        "documentation": {}
-    },
-    {
-        "label": "ceil",
-        "importPath": "math",
-        "description": "math",
-        "isExtraImport": true,
-        "detail": "math",
-        "documentation": {}
-    },
-    {
-        "label": "sqrt",
-        "importPath": "math",
-        "description": "math",
-        "isExtraImport": true,
-        "detail": "math",
-        "documentation": {}
-    },
-    {
-        "label": "acos",
-        "importPath": "math",
-        "description": "math",
-        "isExtraImport": true,
-        "detail": "math",
-        "documentation": {}
-    },
-    {
-        "label": "cos",
-        "importPath": "math",
-        "description": "math",
-        "isExtraImport": true,
-        "detail": "math",
-        "documentation": {}
-    },
-    {
-        "label": "sin",
-        "importPath": "math",
-        "description": "math",
-        "isExtraImport": true,
-        "detail": "math",
-        "documentation": {}
-    },
-    {
-        "label": "tau",
-        "importPath": "math",
-        "description": "math",
-        "isExtraImport": true,
-        "detail": "math",
-        "documentation": {}
-    },
-    {
-        "label": "floor",
-        "importPath": "math",
-        "description": "math",
-        "isExtraImport": true,
-        "detail": "math",
-        "documentation": {}
-    },
-    {
-        "label": "isfinite",
-        "importPath": "math",
-        "description": "math",
-        "isExtraImport": true,
-        "detail": "math",
-        "documentation": {}
-    },
-    {
-        "label": "hypot",
-        "importPath": "math",
-        "description": "math",
-        "isExtraImport": true,
-        "detail": "math",
-        "documentation": {}
-    },
-    {
-        "label": "sqrt",
-        "importPath": "math",
-        "description": "math",
-        "isExtraImport": true,
-        "detail": "math",
-        "documentation": {}
-    },
-    {
-        "label": "fabs",
-        "importPath": "math",
-        "description": "math",
-        "isExtraImport": true,
-        "detail": "math",
-        "documentation": {}
-    },
-    {
-        "label": "exp",
-        "importPath": "math",
-        "description": "math",
-        "isExtraImport": true,
-        "detail": "math",
-        "documentation": {}
-    },
-    {
-        "label": "erf",
-        "importPath": "math",
-        "description": "math",
-        "isExtraImport": true,
-        "detail": "math",
-        "documentation": {}
-    },
-    {
-        "label": "tau",
-        "importPath": "math",
-        "description": "math",
-        "isExtraImport": true,
-        "detail": "math",
-        "documentation": {}
-    },
-    {
-        "label": "log",
-        "importPath": "math",
-        "description": "math",
-        "isExtraImport": true,
-        "detail": "math",
-        "documentation": {}
-    },
-    {
-        "label": "fsum",
-        "importPath": "math",
-        "description": "math",
-        "isExtraImport": true,
-        "detail": "math",
-        "documentation": {}
-    },
-    {
-        "label": "cos",
-        "importPath": "math",
-        "description": "math",
-        "isExtraImport": true,
-        "detail": "math",
-        "documentation": {}
-    },
-    {
-        "label": "pi",
-        "importPath": "math",
-        "description": "math",
-        "isExtraImport": true,
-        "detail": "math",
-        "documentation": {}
-    },
-    {
-        "label": "log",
-        "importPath": "math",
-        "description": "math",
-        "isExtraImport": true,
-        "detail": "math",
-        "documentation": {}
-    },
-    {
-        "label": "exp",
-        "importPath": "math",
-        "description": "math",
-        "isExtraImport": true,
-        "detail": "math",
-        "documentation": {}
-    },
-    {
-        "label": "pi",
-        "importPath": "math",
-        "description": "math",
-        "isExtraImport": true,
-        "detail": "math",
-        "documentation": {}
-    },
-    {
-        "label": "e",
-        "importPath": "math",
-        "description": "math",
-        "isExtraImport": true,
-        "detail": "math",
-        "documentation": {}
-    },
-    {
-        "label": "ceil",
-        "importPath": "math",
-        "description": "math",
-        "isExtraImport": true,
-        "detail": "math",
-        "documentation": {}
-    },
-    {
-        "label": "sqrt",
-        "importPath": "math",
-        "description": "math",
-        "isExtraImport": true,
-        "detail": "math",
-        "documentation": {}
-    },
-    {
-        "label": "acos",
-        "importPath": "math",
-        "description": "math",
-        "isExtraImport": true,
-        "detail": "math",
-        "documentation": {}
-    },
-    {
-        "label": "cos",
-        "importPath": "math",
-        "description": "math",
-        "isExtraImport": true,
-        "detail": "math",
-        "documentation": {}
-    },
-    {
-        "label": "sin",
-        "importPath": "math",
-        "description": "math",
-        "isExtraImport": true,
-        "detail": "math",
-        "documentation": {}
-    },
-    {
-        "label": "tau",
-        "importPath": "math",
-        "description": "math",
-        "isExtraImport": true,
-        "detail": "math",
-        "documentation": {}
-    },
-    {
-        "label": "floor",
-        "importPath": "math",
-        "description": "math",
-        "isExtraImport": true,
-        "detail": "math",
-        "documentation": {}
-    },
-    {
-        "label": "isfinite",
-        "importPath": "math",
-        "description": "math",
-        "isExtraImport": true,
-        "detail": "math",
-        "documentation": {}
-    },
-    {
-        "label": "hypot",
-        "importPath": "math",
-        "description": "math",
-        "isExtraImport": true,
-        "detail": "math",
-        "documentation": {}
-    },
-    {
-        "label": "sqrt",
-        "importPath": "math",
-        "description": "math",
-        "isExtraImport": true,
-        "detail": "math",
-        "documentation": {}
-    },
-    {
-        "label": "fabs",
-        "importPath": "math",
-        "description": "math",
-        "isExtraImport": true,
-        "detail": "math",
-        "documentation": {}
-    },
-    {
-        "label": "exp",
-        "importPath": "math",
-        "description": "math",
-        "isExtraImport": true,
-        "detail": "math",
-        "documentation": {}
-    },
-    {
-        "label": "erf",
-        "importPath": "math",
-        "description": "math",
-        "isExtraImport": true,
-        "detail": "math",
-        "documentation": {}
-    },
-    {
-        "label": "tau",
-        "importPath": "math",
-        "description": "math",
-        "isExtraImport": true,
-        "detail": "math",
-        "documentation": {}
-    },
-    {
-        "label": "log",
-        "importPath": "math",
-        "description": "math",
-        "isExtraImport": true,
-        "detail": "math",
-        "documentation": {}
-    },
-    {
-        "label": "fsum",
-        "importPath": "math",
-        "description": "math",
-        "isExtraImport": true,
-        "detail": "math",
-        "documentation": {}
-    },
-    {
         "label": "datetime",
         "kind": 6,
         "isExtraImport": true,
@@ -1507,15 +2009,6 @@
         "documentation": {}
     },
     {
-        "label": "mlflow",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "mlflow",
-        "description": "mlflow",
-        "detail": "mlflow",
-        "documentation": {}
-    },
-    {
         "label": "torchvision.transforms.functional",
         "kind": 6,
         "isExtraImport": true,
@@ -1525,37 +2018,12 @@
         "documentation": {}
     },
     {
-        "label": "numpy",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "numpy",
-        "description": "numpy",
-        "detail": "numpy",
-        "documentation": {}
-    },
-    {
         "label": "logging",
         "kind": 6,
         "isExtraImport": true,
         "importPath": "logging",
         "description": "logging",
         "detail": "logging",
-        "documentation": {}
-    },
-    {
-        "label": "functional",
-        "importPath": "torch.nn",
-        "description": "torch.nn",
-        "isExtraImport": true,
-        "detail": "torch.nn",
-        "documentation": {}
-    },
-    {
-        "label": "functional",
-        "importPath": "torch.nn",
-        "description": "torch.nn",
-        "isExtraImport": true,
-        "detail": "torch.nn",
         "documentation": {}
     },
     {
@@ -4895,159 +5363,6 @@
         "documentation": {}
     },
     {
-        "label": "sys",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "sys",
-        "description": "sys",
-        "detail": "sys",
-        "documentation": {}
-    },
-    {
-        "label": "executable",
-        "importPath": "sys",
-        "description": "sys",
-        "isExtraImport": true,
-        "detail": "sys",
-        "documentation": {}
-    },
-    {
-        "label": "maxsize",
-        "importPath": "sys",
-        "description": "sys",
-        "isExtraImport": true,
-        "detail": "sys",
-        "documentation": {}
-    },
-    {
-        "label": "maxsize",
-        "importPath": "sys",
-        "description": "sys",
-        "isExtraImport": true,
-        "detail": "sys",
-        "documentation": {}
-    },
-    {
-        "label": "platform",
-        "importPath": "sys",
-        "description": "sys",
-        "isExtraImport": true,
-        "detail": "sys",
-        "documentation": {}
-    },
-    {
-        "label": "executable",
-        "importPath": "sys",
-        "description": "sys",
-        "isExtraImport": true,
-        "detail": "sys",
-        "documentation": {}
-    },
-    {
-        "label": "platform",
-        "importPath": "sys",
-        "description": "sys",
-        "isExtraImport": true,
-        "detail": "sys",
-        "documentation": {}
-    },
-    {
-        "label": "*",
-        "importPath": "sys",
-        "description": "sys",
-        "isExtraImport": true,
-        "detail": "sys",
-        "documentation": {}
-    },
-    {
-        "label": "*",
-        "importPath": "sys",
-        "description": "sys",
-        "isExtraImport": true,
-        "detail": "sys",
-        "documentation": {}
-    },
-    {
-        "label": "maxsize",
-        "importPath": "sys",
-        "description": "sys",
-        "isExtraImport": true,
-        "detail": "sys",
-        "documentation": {}
-    },
-    {
-        "label": "executable",
-        "importPath": "sys",
-        "description": "sys",
-        "isExtraImport": true,
-        "detail": "sys",
-        "documentation": {}
-    },
-    {
-        "label": "maxsize",
-        "importPath": "sys",
-        "description": "sys",
-        "isExtraImport": true,
-        "detail": "sys",
-        "documentation": {}
-    },
-    {
-        "label": "maxsize",
-        "importPath": "sys",
-        "description": "sys",
-        "isExtraImport": true,
-        "detail": "sys",
-        "documentation": {}
-    },
-    {
-        "label": "platform",
-        "importPath": "sys",
-        "description": "sys",
-        "isExtraImport": true,
-        "detail": "sys",
-        "documentation": {}
-    },
-    {
-        "label": "executable",
-        "importPath": "sys",
-        "description": "sys",
-        "isExtraImport": true,
-        "detail": "sys",
-        "documentation": {}
-    },
-    {
-        "label": "platform",
-        "importPath": "sys",
-        "description": "sys",
-        "isExtraImport": true,
-        "detail": "sys",
-        "documentation": {}
-    },
-    {
-        "label": "*",
-        "importPath": "sys",
-        "description": "sys",
-        "isExtraImport": true,
-        "detail": "sys",
-        "documentation": {}
-    },
-    {
-        "label": "*",
-        "importPath": "sys",
-        "description": "sys",
-        "isExtraImport": true,
-        "detail": "sys",
-        "documentation": {}
-    },
-    {
-        "label": "maxsize",
-        "importPath": "sys",
-        "description": "sys",
-        "isExtraImport": true,
-        "detail": "sys",
-        "documentation": {}
-    },
-    {
         "label": "warnings",
         "kind": 6,
         "isExtraImport": true,
@@ -6996,111 +7311,6 @@
         "description": "ctypes.macholib.dylib",
         "isExtraImport": true,
         "detail": "ctypes.macholib.dylib",
-        "documentation": {}
-    },
-    {
-        "label": "re",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "re",
-        "description": "re",
-        "detail": "re",
-        "documentation": {}
-    },
-    {
-        "label": "compile",
-        "importPath": "re",
-        "description": "re",
-        "isExtraImport": true,
-        "detail": "re",
-        "documentation": {}
-    },
-    {
-        "label": "IGNORECASE",
-        "importPath": "re",
-        "description": "re",
-        "isExtraImport": true,
-        "detail": "re",
-        "documentation": {}
-    },
-    {
-        "label": "escape",
-        "importPath": "re",
-        "description": "re",
-        "isExtraImport": true,
-        "detail": "re",
-        "documentation": {}
-    },
-    {
-        "label": "_compiler",
-        "importPath": "re",
-        "description": "re",
-        "isExtraImport": true,
-        "detail": "re",
-        "documentation": {}
-    },
-    {
-        "label": "_constants",
-        "importPath": "re",
-        "description": "re",
-        "isExtraImport": true,
-        "detail": "re",
-        "documentation": {}
-    },
-    {
-        "label": "_parser",
-        "importPath": "re",
-        "description": "re",
-        "isExtraImport": true,
-        "detail": "re",
-        "documentation": {}
-    },
-    {
-        "label": "compile",
-        "importPath": "re",
-        "description": "re",
-        "isExtraImport": true,
-        "detail": "re",
-        "documentation": {}
-    },
-    {
-        "label": "IGNORECASE",
-        "importPath": "re",
-        "description": "re",
-        "isExtraImport": true,
-        "detail": "re",
-        "documentation": {}
-    },
-    {
-        "label": "escape",
-        "importPath": "re",
-        "description": "re",
-        "isExtraImport": true,
-        "detail": "re",
-        "documentation": {}
-    },
-    {
-        "label": "_compiler",
-        "importPath": "re",
-        "description": "re",
-        "isExtraImport": true,
-        "detail": "re",
-        "documentation": {}
-    },
-    {
-        "label": "_constants",
-        "importPath": "re",
-        "description": "re",
-        "isExtraImport": true,
-        "detail": "re",
-        "documentation": {}
-    },
-    {
-        "label": "_parser",
-        "importPath": "re",
-        "description": "re",
-        "isExtraImport": true,
-        "detail": "re",
         "documentation": {}
     },
     {
@@ -18653,79 +18863,6 @@
         "documentation": {}
     },
     {
-        "label": "random",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "random",
-        "description": "random",
-        "detail": "random",
-        "documentation": {}
-    },
-    {
-        "label": "randrange",
-        "importPath": "random",
-        "description": "random",
-        "isExtraImport": true,
-        "detail": "random",
-        "documentation": {}
-    },
-    {
-        "label": "SystemRandom",
-        "importPath": "random",
-        "description": "random",
-        "isExtraImport": true,
-        "detail": "random",
-        "documentation": {}
-    },
-    {
-        "label": "SystemRandom",
-        "importPath": "random",
-        "description": "random",
-        "isExtraImport": true,
-        "detail": "random",
-        "documentation": {}
-    },
-    {
-        "label": "Random",
-        "importPath": "random",
-        "description": "random",
-        "isExtraImport": true,
-        "detail": "random",
-        "documentation": {}
-    },
-    {
-        "label": "randrange",
-        "importPath": "random",
-        "description": "random",
-        "isExtraImport": true,
-        "detail": "random",
-        "documentation": {}
-    },
-    {
-        "label": "SystemRandom",
-        "importPath": "random",
-        "description": "random",
-        "isExtraImport": true,
-        "detail": "random",
-        "documentation": {}
-    },
-    {
-        "label": "SystemRandom",
-        "importPath": "random",
-        "description": "random",
-        "isExtraImport": true,
-        "detail": "random",
-        "documentation": {}
-    },
-    {
-        "label": "Random",
-        "importPath": "random",
-        "description": "random",
-        "isExtraImport": true,
-        "detail": "random",
-        "documentation": {}
-    },
-    {
         "label": "decode_b",
         "importPath": "email._encoded_words",
         "description": "email._encoded_words",
@@ -19167,15 +19304,6 @@
         "importPath": "zlib",
         "description": "zlib",
         "detail": "zlib",
-        "documentation": {}
-    },
-    {
-        "label": "argparse",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "argparse",
-        "description": "argparse",
-        "detail": "argparse",
         "documentation": {}
     },
     {
@@ -34634,6 +34762,312 @@
         "documentation": {}
     },
     {
+        "label": "OUT",
+        "kind": 5,
+        "importPath": "experimentation.aggregate_variants",
+        "description": "experimentation.aggregate_variants",
+        "peekOfCode": "OUT = Path(__file__).resolve().parent / \"experiments\" / \"eval_multi\"\nSEED0 = {\"unconstrained\": \"vit-15-AwA2\", \"constrained\": \"vit-15-constrained-AwA2\",\n         \"constrained_rank\": \"vit-15-constrained_rank-AwA2\"}\nrows = []\nfor f in sorted(OUT.glob(\"*.json\")):\n    r = json.loads(f.read_text())\n    name = r[\"name\"]\n    m = re.match(r\"vit-15-(.+)-s(\\d+)-AwA2$\", name)\n    if m:\n        variant, seed = m.group(1), int(m.group(2))",
+        "detail": "experimentation.aggregate_variants",
+        "documentation": {}
+    },
+    {
+        "label": "SEED0",
+        "kind": 5,
+        "importPath": "experimentation.aggregate_variants",
+        "description": "experimentation.aggregate_variants",
+        "peekOfCode": "SEED0 = {\"unconstrained\": \"vit-15-AwA2\", \"constrained\": \"vit-15-constrained-AwA2\",\n         \"constrained_rank\": \"vit-15-constrained_rank-AwA2\"}\nrows = []\nfor f in sorted(OUT.glob(\"*.json\")):\n    r = json.loads(f.read_text())\n    name = r[\"name\"]\n    m = re.match(r\"vit-15-(.+)-s(\\d+)-AwA2$\", name)\n    if m:\n        variant, seed = m.group(1), int(m.group(2))\n    else:",
+        "detail": "experimentation.aggregate_variants",
+        "documentation": {}
+    },
+    {
+        "label": "rows",
+        "kind": 5,
+        "importPath": "experimentation.aggregate_variants",
+        "description": "experimentation.aggregate_variants",
+        "peekOfCode": "rows = []\nfor f in sorted(OUT.glob(\"*.json\")):\n    r = json.loads(f.read_text())\n    name = r[\"name\"]\n    m = re.match(r\"vit-15-(.+)-s(\\d+)-AwA2$\", name)\n    if m:\n        variant, seed = m.group(1), int(m.group(2))\n    else:\n        inv = {v: k for k, v in SEED0.items()}\n        if name not in inv:",
+        "detail": "experimentation.aggregate_variants",
+        "documentation": {}
+    },
+    {
+        "label": "df",
+        "kind": 5,
+        "importPath": "experimentation.aggregate_variants",
+        "description": "experimentation.aggregate_variants",
+        "peekOfCode": "df = pd.DataFrame(rows).sort_values([\"variant\", \"seed\"])\nKEY = [\"accuracy\", \"b4_attn_cos\", \"b4_out_cka_cls\", \"b4_out_cka_tok\", \"b4_out_erank_cls_mean\", \"b4_out_erank_cls_concat\",\n       \"b4_key_w_erank_mean\", \"b4_value_w_erank_mean\", \"probe_head_r2_mean\", \"probe_concat_r2\",\n       \"probe_concat_r2_unseen\", \"probe_r2vec_pearson_mean\", \"resid_b1_r2_unseen\", \"resid_b2_r2_unseen\",\n       \"resid_b3_r2_unseen\", \"resid_b4_r2_unseen\", \"abl_drop_b4_mean\", \"abl_drop_b4_max\", \"abl_b4_gini\",\n       \"dmg_cosine_mean\", \"dmg_specialization_index\", \"dmg_split_same\"]\nKEY = [k for k in KEY if k in df.columns]\nif __name__ == \"__main__\":\n    pd.set_option(\"display.width\", 250, \"display.max_columns\", 40, \"display.max_rows\", 200)\n    print(\"n por variante:\", df.groupby(\"variant\").size().to_dict())",
+        "detail": "experimentation.aggregate_variants",
+        "documentation": {}
+    },
+    {
+        "label": "KEY",
+        "kind": 5,
+        "importPath": "experimentation.aggregate_variants",
+        "description": "experimentation.aggregate_variants",
+        "peekOfCode": "KEY = [\"accuracy\", \"b4_attn_cos\", \"b4_out_cka_cls\", \"b4_out_cka_tok\", \"b4_out_erank_cls_mean\", \"b4_out_erank_cls_concat\",\n       \"b4_key_w_erank_mean\", \"b4_value_w_erank_mean\", \"probe_head_r2_mean\", \"probe_concat_r2\",\n       \"probe_concat_r2_unseen\", \"probe_r2vec_pearson_mean\", \"resid_b1_r2_unseen\", \"resid_b2_r2_unseen\",\n       \"resid_b3_r2_unseen\", \"resid_b4_r2_unseen\", \"abl_drop_b4_mean\", \"abl_drop_b4_max\", \"abl_b4_gini\",\n       \"dmg_cosine_mean\", \"dmg_specialization_index\", \"dmg_split_same\"]\nKEY = [k for k in KEY if k in df.columns]\nif __name__ == \"__main__\":\n    pd.set_option(\"display.width\", 250, \"display.max_columns\", 40, \"display.max_rows\", 200)\n    print(\"n por variante:\", df.groupby(\"variant\").size().to_dict())\n    g = df.groupby(\"variant\")[KEY]",
+        "detail": "experimentation.aggregate_variants",
+        "documentation": {}
+    },
+    {
+        "label": "KEY",
+        "kind": 5,
+        "importPath": "experimentation.aggregate_variants",
+        "description": "experimentation.aggregate_variants",
+        "peekOfCode": "KEY = [k for k in KEY if k in df.columns]\nif __name__ == \"__main__\":\n    pd.set_option(\"display.width\", 250, \"display.max_columns\", 40, \"display.max_rows\", 200)\n    print(\"n por variante:\", df.groupby(\"variant\").size().to_dict())\n    g = df.groupby(\"variant\")[KEY]\n    mean, sd = g.mean(), g.std(ddof=1)\n    pref = [\"unconstrained\", \"constrained\", \"constrained_rank\", \"constrained_xcka\", \"constrained_rank_xcka\",\n            \"constrained_l05\", \"constrained_rank_l05\"]\n    order = [v for v in pref if v in mean.index] + sorted(v for v in mean.index if v not in pref)\n    out = pd.DataFrame({k: [f\"{mean.loc[v, k]:.3f}±{(0 if np.isnan(sd.loc[v, k]) else sd.loc[v, k]):.3f}\" for v in order]",
+        "detail": "experimentation.aggregate_variants",
+        "documentation": {}
+    },
+    {
+        "label": "load",
+        "kind": 2,
+        "importPath": "experimentation.evaluate_checkpoints",
+        "description": "experimentation.evaluate_checkpoints",
+        "peekOfCode": "def load(name):\n    d = EXP_DIR / name\n    config = json.loads((d / \"config.json\").read_text())\n    m = ViTForClassfication(config)\n    m.load_state_dict(torch.load(d / \"model_final.pt\", map_location=\"cpu\"))\n    return m.to(device).eval(), config, json.loads((d / \"metrics.json\").read_text())\n@torch.no_grad()\ndef collect(model, n_blocks, n_heads, head_size):\n    \"\"\"Una pasada: salidas de cabeza (CLS y subset todos-los-tokens), atención CLS->parches, residual CLS.\"\"\"\n    cls_out = [[[] for _ in range(n_heads)] for _ in range(n_blocks)]",
+        "detail": "experimentation.evaluate_checkpoints",
+        "documentation": {}
+    },
+    {
+        "label": "collect",
+        "kind": 2,
+        "importPath": "experimentation.evaluate_checkpoints",
+        "description": "experimentation.evaluate_checkpoints",
+        "peekOfCode": "def collect(model, n_blocks, n_heads, head_size):\n    \"\"\"Una pasada: salidas de cabeza (CLS y subset todos-los-tokens), atención CLS->parches, residual CLS.\"\"\"\n    cls_out = [[[] for _ in range(n_heads)] for _ in range(n_blocks)]\n    tok_out = [[[] for _ in range(n_heads)] for _ in range(n_blocks)]\n    cls_att = [[[] for _ in range(n_heads)] for _ in range(n_blocks)]\n    resid = [[] for _ in range(n_blocks)]\n    cur = {\"i0\": 0}\n    hooks = []\n    for b, block in enumerate(model.encoder.blocks):\n        for h, head in enumerate(block.attention.heads):",
+        "detail": "experimentation.evaluate_checkpoints",
+        "documentation": {}
+    },
+    {
+        "label": "pair_mean",
+        "kind": 2,
+        "importPath": "experimentation.evaluate_checkpoints",
+        "description": "experimentation.evaluate_checkpoints",
+        "peekOfCode": "def pair_mean(fn, n_heads):\n    return float(np.mean([fn(i, j) for i in range(n_heads) for j in range(i + 1, n_heads)]))\ndef probe_r2(X, Y, folds):\n    pred = np.zeros_like(Y)\n    for tr, te in folds:\n        sc = StandardScaler().fit(X[tr])\n        r = Ridge(alpha=10.0).fit(sc.transform(X[tr]), Y[tr])\n        pred[te] = r.predict(sc.transform(X[te]))\n    ss_res = ((Y - pred) ** 2).sum(0)\n    ss_tot = ((Y - Y.mean(0)) ** 2).sum(0)",
+        "detail": "experimentation.evaluate_checkpoints",
+        "documentation": {}
+    },
+    {
+        "label": "probe_r2",
+        "kind": 2,
+        "importPath": "experimentation.evaluate_checkpoints",
+        "description": "experimentation.evaluate_checkpoints",
+        "peekOfCode": "def probe_r2(X, Y, folds):\n    pred = np.zeros_like(Y)\n    for tr, te in folds:\n        sc = StandardScaler().fit(X[tr])\n        r = Ridge(alpha=10.0).fit(sc.transform(X[tr]), Y[tr])\n        pred[te] = r.predict(sc.transform(X[te]))\n    ss_res = ((Y - pred) ** 2).sum(0)\n    ss_tot = ((Y - Y.mean(0)) ** 2).sum(0)\n    return 1 - ss_res / np.maximum(ss_tot, 1e-12)\n@torch.no_grad()",
+        "detail": "experimentation.evaluate_checkpoints",
+        "documentation": {}
+    },
+    {
+        "label": "ablation_preds",
+        "kind": 2,
+        "importPath": "experimentation.evaluate_checkpoints",
+        "description": "experimentation.evaluate_checkpoints",
+        "peekOfCode": "def ablation_preds(model, n_blocks, n_heads):\n    \"\"\"preds[0] = sin ablar; preds[1 + b * n_heads + h] = cabeza (b, h) apagada. (n_blocks*n_heads + 1, N)\"\"\"\n    state = {\"zero\": None}\n    hooks = []\n    for b, block in enumerate(model.encoder.blocks):\n        for h, head in enumerate(block.attention.heads):\n            def hook(_m, _i, out, b=b, h=h):\n                if state[\"zero\"] == (b, h):\n                    return (torch.zeros_like(out[0]), out[1])\n            hooks.append(head.register_forward_hook(hook))",
+        "detail": "experimentation.evaluate_checkpoints",
+        "documentation": {}
+    },
+    {
+        "label": "damage_vectors",
+        "kind": 2,
+        "importPath": "experimentation.evaluate_checkpoints",
+        "description": "experimentation.evaluate_checkpoints",
+        "peekOfCode": "def damage_vectors(preds, block, n_heads, idx=None):\n    idx = np.arange(N) if idx is None else idx\n    lab = labels[idx]\n    def per_class_acc(p):\n        return np.array([(p[idx][lab == c] == c).mean() if (lab == c).any() else np.nan for c in range(n_cls)])\n    base = per_class_acc(preds[0])\n    return np.stack([base - per_class_acc(preds[1 + block * n_heads + h]) for h in range(n_heads)])\ndef evaluate(name):\n    cache = OUT_DIR / f\"{name}.json\"\n    if cache.exists():",
+        "detail": "experimentation.evaluate_checkpoints",
+        "documentation": {}
+    },
+    {
+        "label": "evaluate",
+        "kind": 2,
+        "importPath": "experimentation.evaluate_checkpoints",
+        "description": "experimentation.evaluate_checkpoints",
+        "peekOfCode": "def evaluate(name):\n    cache = OUT_DIR / f\"{name}.json\"\n    if cache.exists():\n        return json.loads(cache.read_text())\n    model, config, metrics = load(name)\n    n_blocks, n_heads = config[\"num_hidden_layers\"], config[\"num_attention_heads\"]\n    head_size = config[\"hidden_size\"] // n_heads\n    res = {\"name\": name, \"accuracy\": float(metrics[\"accuracy\"])}\n    logits, cls_out, tok_out, cls_att, resid = collect(model, n_blocks, n_heads, head_size)\n    res[\"accuracy_recomputed\"] = float((logits.argmax(-1).numpy() == labels).mean())",
+        "detail": "experimentation.evaluate_checkpoints",
+        "documentation": {}
+    },
+    {
+        "label": "HERE",
+        "kind": 5,
+        "importPath": "experimentation.evaluate_checkpoints",
+        "description": "experimentation.evaluate_checkpoints",
+        "peekOfCode": "HERE = Path(__file__).resolve().parent\nROOT = HERE.parent\nsys.path.insert(0, str(ROOT))\nfrom modules.cka import linear_cka  # noqa: E402\nfrom modules.datasets import AwA2Dataset  # noqa: E402\nfrom modules.effective_rank import effective_rank  # noqa: E402\nfrom modules.model import ViTForClassfication  # noqa: E402\nEXP_DIR = HERE / \"experiments\"\nOUT_DIR = EXP_DIR / \"eval_multi\"\nOUT_DIR.mkdir(exist_ok=True)",
+        "detail": "experimentation.evaluate_checkpoints",
+        "documentation": {}
+    },
+    {
+        "label": "ROOT",
+        "kind": 5,
+        "importPath": "experimentation.evaluate_checkpoints",
+        "description": "experimentation.evaluate_checkpoints",
+        "peekOfCode": "ROOT = HERE.parent\nsys.path.insert(0, str(ROOT))\nfrom modules.cka import linear_cka  # noqa: E402\nfrom modules.datasets import AwA2Dataset  # noqa: E402\nfrom modules.effective_rank import effective_rank  # noqa: E402\nfrom modules.model import ViTForClassfication  # noqa: E402\nEXP_DIR = HERE / \"experiments\"\nOUT_DIR = EXP_DIR / \"eval_multi\"\nOUT_DIR.mkdir(exist_ok=True)\ndevice = torch.device(\"mps\" if torch.backends.mps.is_available() else \"cpu\")",
+        "detail": "experimentation.evaluate_checkpoints",
+        "documentation": {}
+    },
+    {
+        "label": "EXP_DIR",
+        "kind": 5,
+        "importPath": "experimentation.evaluate_checkpoints",
+        "description": "experimentation.evaluate_checkpoints",
+        "peekOfCode": "EXP_DIR = HERE / \"experiments\"\nOUT_DIR = EXP_DIR / \"eval_multi\"\nOUT_DIR.mkdir(exist_ok=True)\ndevice = torch.device(\"mps\" if torch.backends.mps.is_available() else \"cpu\")\nVISUAL_ATTRS = {\n    \"black\", \"white\", \"blue\", \"brown\", \"gray\", \"orange\", \"red\", \"yellow\", \"patches\", \"spots\", \"stripes\",\n    \"furry\", \"hairless\", \"toughskin\", \"big\", \"small\", \"bulbous\", \"lean\", \"flippers\", \"hands\", \"hooves\",\n    \"pads\", \"paws\", \"longleg\", \"longneck\", \"tail\", \"chewteeth\", \"meatteeth\", \"buckteeth\", \"strainteeth\",\n    \"horns\", \"claws\", \"tusks\", \"arctic\", \"coastal\", \"desert\", \"bush\", \"plains\", \"forest\", \"fields\",\n    \"jungle\", \"mountains\", \"ocean\", \"ground\", \"water\", \"tree\", \"cave\",",
+        "detail": "experimentation.evaluate_checkpoints",
+        "documentation": {}
+    },
+    {
+        "label": "OUT_DIR",
+        "kind": 5,
+        "importPath": "experimentation.evaluate_checkpoints",
+        "description": "experimentation.evaluate_checkpoints",
+        "peekOfCode": "OUT_DIR = EXP_DIR / \"eval_multi\"\nOUT_DIR.mkdir(exist_ok=True)\ndevice = torch.device(\"mps\" if torch.backends.mps.is_available() else \"cpu\")\nVISUAL_ATTRS = {\n    \"black\", \"white\", \"blue\", \"brown\", \"gray\", \"orange\", \"red\", \"yellow\", \"patches\", \"spots\", \"stripes\",\n    \"furry\", \"hairless\", \"toughskin\", \"big\", \"small\", \"bulbous\", \"lean\", \"flippers\", \"hands\", \"hooves\",\n    \"pads\", \"paws\", \"longleg\", \"longneck\", \"tail\", \"chewteeth\", \"meatteeth\", \"buckteeth\", \"strainteeth\",\n    \"horns\", \"claws\", \"tusks\", \"arctic\", \"coastal\", \"desert\", \"bush\", \"plains\", \"forest\", \"fields\",\n    \"jungle\", \"mountains\", \"ocean\", \"ground\", \"water\", \"tree\", \"cave\",\n}",
+        "detail": "experimentation.evaluate_checkpoints",
+        "documentation": {}
+    },
+    {
+        "label": "device",
+        "kind": 5,
+        "importPath": "experimentation.evaluate_checkpoints",
+        "description": "experimentation.evaluate_checkpoints",
+        "peekOfCode": "device = torch.device(\"mps\" if torch.backends.mps.is_available() else \"cpu\")\nVISUAL_ATTRS = {\n    \"black\", \"white\", \"blue\", \"brown\", \"gray\", \"orange\", \"red\", \"yellow\", \"patches\", \"spots\", \"stripes\",\n    \"furry\", \"hairless\", \"toughskin\", \"big\", \"small\", \"bulbous\", \"lean\", \"flippers\", \"hands\", \"hooves\",\n    \"pads\", \"paws\", \"longleg\", \"longneck\", \"tail\", \"chewteeth\", \"meatteeth\", \"buckteeth\", \"strainteeth\",\n    \"horns\", \"claws\", \"tusks\", \"arctic\", \"coastal\", \"desert\", \"bush\", \"plains\", \"forest\", \"fields\",\n    \"jungle\", \"mountains\", \"ocean\", \"ground\", \"water\", \"tree\", \"cave\",\n}\nN_TOK_SUBSET = 1000          # imágenes para métricas sobre todos los tokens\nBLOCK = 3                    # bloque penalizado (0-indexed): el último",
+        "detail": "experimentation.evaluate_checkpoints",
+        "documentation": {}
+    },
+    {
+        "label": "VISUAL_ATTRS",
+        "kind": 5,
+        "importPath": "experimentation.evaluate_checkpoints",
+        "description": "experimentation.evaluate_checkpoints",
+        "peekOfCode": "VISUAL_ATTRS = {\n    \"black\", \"white\", \"blue\", \"brown\", \"gray\", \"orange\", \"red\", \"yellow\", \"patches\", \"spots\", \"stripes\",\n    \"furry\", \"hairless\", \"toughskin\", \"big\", \"small\", \"bulbous\", \"lean\", \"flippers\", \"hands\", \"hooves\",\n    \"pads\", \"paws\", \"longleg\", \"longneck\", \"tail\", \"chewteeth\", \"meatteeth\", \"buckteeth\", \"strainteeth\",\n    \"horns\", \"claws\", \"tusks\", \"arctic\", \"coastal\", \"desert\", \"bush\", \"plains\", \"forest\", \"fields\",\n    \"jungle\", \"mountains\", \"ocean\", \"ground\", \"water\", \"tree\", \"cave\",\n}\nN_TOK_SUBSET = 1000          # imágenes para métricas sobre todos los tokens\nBLOCK = 3                    # bloque penalizado (0-indexed): el último\nN_SPLITS = 50                # particiones para el índice de especialización por clase",
+        "detail": "experimentation.evaluate_checkpoints",
+        "documentation": {}
+    },
+    {
+        "label": "N_TOK_SUBSET",
+        "kind": 5,
+        "importPath": "experimentation.evaluate_checkpoints",
+        "description": "experimentation.evaluate_checkpoints",
+        "peekOfCode": "N_TOK_SUBSET = 1000          # imágenes para métricas sobre todos los tokens\nBLOCK = 3                    # bloque penalizado (0-indexed): el último\nN_SPLITS = 50                # particiones para el índice de especialización por clase\n_dataset = AwA2Dataset(image_size=32, root=str(ROOT / \"data\" / \"awa2\"))\n_dataset.get_loaders(batch_size=256, num_workers=0)\n_test = _dataset.testset\nlabels = _test.labels.numpy()\nattr_names = list(_dataset.attribute_names)\nvis = np.array([a in VISUAL_ATTRS for a in attr_names])\nY = _dataset.attributes_continuous[labels].numpy()[:, vis]",
+        "detail": "experimentation.evaluate_checkpoints",
+        "documentation": {}
+    },
+    {
+        "label": "BLOCK",
+        "kind": 5,
+        "importPath": "experimentation.evaluate_checkpoints",
+        "description": "experimentation.evaluate_checkpoints",
+        "peekOfCode": "BLOCK = 3                    # bloque penalizado (0-indexed): el último\nN_SPLITS = 50                # particiones para el índice de especialización por clase\n_dataset = AwA2Dataset(image_size=32, root=str(ROOT / \"data\" / \"awa2\"))\n_dataset.get_loaders(batch_size=256, num_workers=0)\n_test = _dataset.testset\nlabels = _test.labels.numpy()\nattr_names = list(_dataset.attribute_names)\nvis = np.array([a in VISUAL_ATTRS for a in attr_names])\nY = _dataset.attributes_continuous[labels].numpy()[:, vis]\nn_cls = len(_dataset.classes)",
+        "detail": "experimentation.evaluate_checkpoints",
+        "documentation": {}
+    },
+    {
+        "label": "N_SPLITS",
+        "kind": 5,
+        "importPath": "experimentation.evaluate_checkpoints",
+        "description": "experimentation.evaluate_checkpoints",
+        "peekOfCode": "N_SPLITS = 50                # particiones para el índice de especialización por clase\n_dataset = AwA2Dataset(image_size=32, root=str(ROOT / \"data\" / \"awa2\"))\n_dataset.get_loaders(batch_size=256, num_workers=0)\n_test = _dataset.testset\nlabels = _test.labels.numpy()\nattr_names = list(_dataset.attribute_names)\nvis = np.array([a in VISUAL_ATTRS for a in attr_names])\nY = _dataset.attributes_continuous[labels].numpy()[:, vis]\nn_cls = len(_dataset.classes)\nimages = torch.stack([_test[i][0] for i in range(len(_test))])      # (N, 3, 32, 32), ya transformadas",
+        "detail": "experimentation.evaluate_checkpoints",
+        "documentation": {}
+    },
+    {
+        "label": "_dataset",
+        "kind": 5,
+        "importPath": "experimentation.evaluate_checkpoints",
+        "description": "experimentation.evaluate_checkpoints",
+        "peekOfCode": "_dataset = AwA2Dataset(image_size=32, root=str(ROOT / \"data\" / \"awa2\"))\n_dataset.get_loaders(batch_size=256, num_workers=0)\n_test = _dataset.testset\nlabels = _test.labels.numpy()\nattr_names = list(_dataset.attribute_names)\nvis = np.array([a in VISUAL_ATTRS for a in attr_names])\nY = _dataset.attributes_continuous[labels].numpy()[:, vis]\nn_cls = len(_dataset.classes)\nimages = torch.stack([_test[i][0] for i in range(len(_test))])      # (N, 3, 32, 32), ya transformadas\nN = len(images)",
+        "detail": "experimentation.evaluate_checkpoints",
+        "documentation": {}
+    },
+    {
+        "label": "_test",
+        "kind": 5,
+        "importPath": "experimentation.evaluate_checkpoints",
+        "description": "experimentation.evaluate_checkpoints",
+        "peekOfCode": "_test = _dataset.testset\nlabels = _test.labels.numpy()\nattr_names = list(_dataset.attribute_names)\nvis = np.array([a in VISUAL_ATTRS for a in attr_names])\nY = _dataset.attributes_continuous[labels].numpy()[:, vis]\nn_cls = len(_dataset.classes)\nimages = torch.stack([_test[i][0] for i in range(len(_test))])      # (N, 3, 32, 32), ya transformadas\nN = len(images)\ndef load(name):\n    d = EXP_DIR / name",
+        "detail": "experimentation.evaluate_checkpoints",
+        "documentation": {}
+    },
+    {
+        "label": "labels",
+        "kind": 5,
+        "importPath": "experimentation.evaluate_checkpoints",
+        "description": "experimentation.evaluate_checkpoints",
+        "peekOfCode": "labels = _test.labels.numpy()\nattr_names = list(_dataset.attribute_names)\nvis = np.array([a in VISUAL_ATTRS for a in attr_names])\nY = _dataset.attributes_continuous[labels].numpy()[:, vis]\nn_cls = len(_dataset.classes)\nimages = torch.stack([_test[i][0] for i in range(len(_test))])      # (N, 3, 32, 32), ya transformadas\nN = len(images)\ndef load(name):\n    d = EXP_DIR / name\n    config = json.loads((d / \"config.json\").read_text())",
+        "detail": "experimentation.evaluate_checkpoints",
+        "documentation": {}
+    },
+    {
+        "label": "attr_names",
+        "kind": 5,
+        "importPath": "experimentation.evaluate_checkpoints",
+        "description": "experimentation.evaluate_checkpoints",
+        "peekOfCode": "attr_names = list(_dataset.attribute_names)\nvis = np.array([a in VISUAL_ATTRS for a in attr_names])\nY = _dataset.attributes_continuous[labels].numpy()[:, vis]\nn_cls = len(_dataset.classes)\nimages = torch.stack([_test[i][0] for i in range(len(_test))])      # (N, 3, 32, 32), ya transformadas\nN = len(images)\ndef load(name):\n    d = EXP_DIR / name\n    config = json.loads((d / \"config.json\").read_text())\n    m = ViTForClassfication(config)",
+        "detail": "experimentation.evaluate_checkpoints",
+        "documentation": {}
+    },
+    {
+        "label": "vis",
+        "kind": 5,
+        "importPath": "experimentation.evaluate_checkpoints",
+        "description": "experimentation.evaluate_checkpoints",
+        "peekOfCode": "vis = np.array([a in VISUAL_ATTRS for a in attr_names])\nY = _dataset.attributes_continuous[labels].numpy()[:, vis]\nn_cls = len(_dataset.classes)\nimages = torch.stack([_test[i][0] for i in range(len(_test))])      # (N, 3, 32, 32), ya transformadas\nN = len(images)\ndef load(name):\n    d = EXP_DIR / name\n    config = json.loads((d / \"config.json\").read_text())\n    m = ViTForClassfication(config)\n    m.load_state_dict(torch.load(d / \"model_final.pt\", map_location=\"cpu\"))",
+        "detail": "experimentation.evaluate_checkpoints",
+        "documentation": {}
+    },
+    {
+        "label": "Y",
+        "kind": 5,
+        "importPath": "experimentation.evaluate_checkpoints",
+        "description": "experimentation.evaluate_checkpoints",
+        "peekOfCode": "Y = _dataset.attributes_continuous[labels].numpy()[:, vis]\nn_cls = len(_dataset.classes)\nimages = torch.stack([_test[i][0] for i in range(len(_test))])      # (N, 3, 32, 32), ya transformadas\nN = len(images)\ndef load(name):\n    d = EXP_DIR / name\n    config = json.loads((d / \"config.json\").read_text())\n    m = ViTForClassfication(config)\n    m.load_state_dict(torch.load(d / \"model_final.pt\", map_location=\"cpu\"))\n    return m.to(device).eval(), config, json.loads((d / \"metrics.json\").read_text())",
+        "detail": "experimentation.evaluate_checkpoints",
+        "documentation": {}
+    },
+    {
+        "label": "n_cls",
+        "kind": 5,
+        "importPath": "experimentation.evaluate_checkpoints",
+        "description": "experimentation.evaluate_checkpoints",
+        "peekOfCode": "n_cls = len(_dataset.classes)\nimages = torch.stack([_test[i][0] for i in range(len(_test))])      # (N, 3, 32, 32), ya transformadas\nN = len(images)\ndef load(name):\n    d = EXP_DIR / name\n    config = json.loads((d / \"config.json\").read_text())\n    m = ViTForClassfication(config)\n    m.load_state_dict(torch.load(d / \"model_final.pt\", map_location=\"cpu\"))\n    return m.to(device).eval(), config, json.loads((d / \"metrics.json\").read_text())\n@torch.no_grad()",
+        "detail": "experimentation.evaluate_checkpoints",
+        "documentation": {}
+    },
+    {
+        "label": "images",
+        "kind": 5,
+        "importPath": "experimentation.evaluate_checkpoints",
+        "description": "experimentation.evaluate_checkpoints",
+        "peekOfCode": "images = torch.stack([_test[i][0] for i in range(len(_test))])      # (N, 3, 32, 32), ya transformadas\nN = len(images)\ndef load(name):\n    d = EXP_DIR / name\n    config = json.loads((d / \"config.json\").read_text())\n    m = ViTForClassfication(config)\n    m.load_state_dict(torch.load(d / \"model_final.pt\", map_location=\"cpu\"))\n    return m.to(device).eval(), config, json.loads((d / \"metrics.json\").read_text())\n@torch.no_grad()\ndef collect(model, n_blocks, n_heads, head_size):",
+        "detail": "experimentation.evaluate_checkpoints",
+        "documentation": {}
+    },
+    {
+        "label": "N",
+        "kind": 5,
+        "importPath": "experimentation.evaluate_checkpoints",
+        "description": "experimentation.evaluate_checkpoints",
+        "peekOfCode": "N = len(images)\ndef load(name):\n    d = EXP_DIR / name\n    config = json.loads((d / \"config.json\").read_text())\n    m = ViTForClassfication(config)\n    m.load_state_dict(torch.load(d / \"model_final.pt\", map_location=\"cpu\"))\n    return m.to(device).eval(), config, json.loads((d / \"metrics.json\").read_text())\n@torch.no_grad()\ndef collect(model, n_blocks, n_heads, head_size):\n    \"\"\"Una pasada: salidas de cabeza (CLS y subset todos-los-tokens), atención CLS->parches, residual CLS.\"\"\"",
+        "detail": "experimentation.evaluate_checkpoints",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "experimentation.run_variant",
+        "description": "experimentation.run_variant",
+        "peekOfCode": "def main():\n    p = argparse.ArgumentParser()\n    p.add_argument(\"--name\", required=True)\n    p.add_argument(\"--seed\", type=int, required=True)\n    p.add_argument(\"--constrained\", type=int, default=1)\n    p.add_argument(\"--lambda-loss\", type=float, default=0.1)\n    p.add_argument(\"--lambda-rank\", type=float, default=0.0)\n    p.add_argument(\"--rank-target\", type=float, default=6.0)\n    p.add_argument(\"--var-floor\", type=float, default=0.5)\n    p.add_argument(\"--lambda-xcka\", type=float, default=0.0)",
+        "detail": "experimentation.run_variant",
+        "documentation": {}
+    },
+    {
+        "label": "HERE",
+        "kind": 5,
+        "importPath": "experimentation.run_variant",
+        "description": "experimentation.run_variant",
+        "peekOfCode": "HERE = Path(__file__).resolve().parent\nROOT = HERE.parent\nsys.path.insert(0, str(ROOT))\nfrom modules.datasets import AwA2Dataset  # noqa: E402\nfrom modules.model import ViTForClassfication  # noqa: E402\nfrom modules.training import Trainer  # noqa: E402\ndef main():\n    p = argparse.ArgumentParser()\n    p.add_argument(\"--name\", required=True)\n    p.add_argument(\"--seed\", type=int, required=True)",
+        "detail": "experimentation.run_variant",
+        "documentation": {}
+    },
+    {
+        "label": "ROOT",
+        "kind": 5,
+        "importPath": "experimentation.run_variant",
+        "description": "experimentation.run_variant",
+        "peekOfCode": "ROOT = HERE.parent\nsys.path.insert(0, str(ROOT))\nfrom modules.datasets import AwA2Dataset  # noqa: E402\nfrom modules.model import ViTForClassfication  # noqa: E402\nfrom modules.training import Trainer  # noqa: E402\ndef main():\n    p = argparse.ArgumentParser()\n    p.add_argument(\"--name\", required=True)\n    p.add_argument(\"--seed\", type=int, required=True)\n    p.add_argument(\"--constrained\", type=int, default=1)",
+        "detail": "experimentation.run_variant",
+        "documentation": {}
+    },
+    {
         "label": "linear_cka",
         "kind": 2,
         "importPath": "modules.cka",
@@ -34746,7 +35180,7 @@
         "kind": 2,
         "importPath": "modules.effective_rank",
         "description": "modules.effective_rank",
-        "peekOfCode": "def effective_rank(A: torch.Tensor) -> torch.Tensor:\n    \"\"\"\n    Effective rank de Roy & Vetterli (2007): erank(A) = exp(H(p)),\n    donde p_k = sigma_k / ||sigma||_1 son los valores singulares de A\n    normalizados y H es su entropía de Shannon (con la convención 0*log(0) = 0).\n    Soporta batches: A puede tener shape (..., M, N), y el rango efectivo\n    se calcula sobre las últimas dos dimensiones, devolviendo shape (...,).\n    Cumple 1 <= erank(A) <= rank(A) <= min(M, N).\n    \"\"\"\n    # torch.linalg.svdvals no está implementado en el backend MPS; se calcula",
+        "peekOfCode": "def effective_rank(A: torch.Tensor) -> torch.Tensor:\n    \"\"\"\n    Effective rank de Roy & Vetterli (2007): erank(A) = exp(H(p)),\n    donde p_k = sigma_k / ||sigma||_1 son los valores singulares de A\n    normalizados y H es su entropía de Shannon (con la convención 0*log(0) = 0).\n    Soporta batches: A puede tener shape (..., M, N), y el rango efectivo\n    se calcula sobre las últimas dos dimensiones, devolviendo shape (...,).\n    Cumple 1 <= erank(A) <= rank(A) <= min(M, N).\n    Es diferenciable y estable cuando hay valores singulares exactamente 0 (matrices de rango\n    deficiente, p.ej. cabezas con atención idéntica): la convención 0*log(0) = 0 se implementa",
         "detail": "modules.effective_rank",
         "documentation": {}
     },
@@ -34784,6 +35218,51 @@
         "description": "modules.figures",
         "peekOfCode": "def save_fig(fig, stem, output_dir, tag=None, project_root=None):\n    \"\"\"Guarda `fig` como PNG en `output_dir`, con un nombre único y descriptivo\n    (`stem` + `tag`, p.ej. \"damage_heatmap_vit-with-15-epochs-AwA2.png\"), e imprime\n    el nombre de archivo usado — así queda claro en la celda con qué modelo/corrida\n    corresponde cada imagen guardada. Devuelve el `Path` guardado.\n    `project_root`, si se pasa, hace que se imprima la ruta relativa a él en vez de\n    la ruta absoluta completa (más legible en el notebook).\n    \"\"\"\n    output_dir = Path(output_dir)\n    output_dir.mkdir(parents=True, exist_ok=True)",
         "detail": "modules.figures",
+        "documentation": {}
+    },
+    {
+        "label": "interpretability_loss",
+        "kind": 2,
+        "importPath": "modules.loss",
+        "description": "modules.loss",
+        "peekOfCode": "def interpretability_loss(attention_maps):\n    # attention_maps: (B, H, P) — atención del CLS hacia los parches por cada cabeza\n    B, H, P = attention_maps.shape\n    # Normalización L2 antes del producto punto entre cabezas.\n    # Así la similitud queda en [-1, 1] (similitud coseno) y no depende de la magnitud\n    # absoluta del vector de atención — evita que el modelo reduzca la loss\n    # simplemente achicando los valores de atención.\n    attention_maps = F.normalize(attention_maps, p=2, dim=-1)\n    # Producto punto entre todos los pares de cabezas (i, j) posición a posición\n    mm = torch.einsum('bhp,bkp->bhkp', attention_maps, attention_maps)",
+        "detail": "modules.loss",
+        "documentation": {}
+    },
+    {
+        "label": "effective_rank_floor_loss",
+        "kind": 2,
+        "importPath": "modules.loss",
+        "description": "modules.loss",
+        "peekOfCode": "def effective_rank_floor_loss(model, target_rank, params=(\"query\", \"key\"), block_idx=-1):\n    \"\"\"\n    Piso de rango efectivo por cabeza sobre los pesos de `params` (Q y/o K) del bloque `block_idx`\n    (por defecto el último, el mismo que usa la penalización de atención y el que se loguea en MLflow).\n    Por cabeza: relu(target_rank - erank) / target_rank, en [0, 1). Es 0 cuando la cabeza ya tiene\n    rango efectivo >= target_rank, así que solo actúa sobre cabezas que colapsan. Con\n    target_rank = head_size equivale a maximizar el rango efectivo sin tope.\n    Devuelve el promedio sobre cabezas y sobre `params`. Es diferenciable respecto de los pesos.\n    \"\"\"\n    heads = model.encoder.blocks[block_idx].attention.heads",
+        "detail": "modules.loss",
+        "documentation": {}
+    },
+    {
+        "label": "attention_rank_floor_loss",
+        "kind": 2,
+        "importPath": "modules.loss",
+        "description": "modules.loss",
+        "peekOfCode": "def attention_rank_floor_loss(attention_maps, target_rank):\n    \"\"\"\n    Piso de rango efectivo sobre la matriz (H, P) de atención del CLS hacia los parches, por imagen.\n    attention_maps: (B, H, P), el mismo tensor que recibe `interpretability_loss`.\n    Por imagen: relu(target_rank - erank) / target_rank. Vale 0 si las cabezas ya son al menos\n    `target_rank` \"cabezas efectivamente distintas\"; con target_rank = H equivale a maximizar el\n    rango efectivo sin tope. Se promedia sobre el batch. Es diferenciable.\n    \"\"\"\n    max_rank = min(attention_maps.shape[-2:])\n    assert target_rank <= max_rank, f\"target_rank={target_rank} > rango máximo posible {max_rank}\"",
+        "detail": "modules.loss",
+        "documentation": {}
+    },
+    {
+        "label": "head_output_collapse_loss",
+        "kind": 2,
+        "importPath": "modules.loss",
+        "description": "modules.loss",
+        "peekOfCode": "def head_output_collapse_loss(head_outputs, target_rank, var_floor=0.5):\n    \"\"\"\n    Anti-colapso por cabeza sobre su salida. head_outputs: (N, H, d), N = muestras (p.ej. el CLS de\n    cada imagen del batch), H = cabezas, d = head_size.\n    Se trabaja con la DIRECCIÓN de la salida (normalizada L2 por muestra) y centrada sobre el batch,\n    así ambos términos son invariantes a la escala (que en un ViT pre-LN es arbitraria y se podría\n    \"arreglar\" agrandando pesos):\n    - Piso de varianza: std por dimensión >= gamma = var_floor / sqrt(d). Para direcciones\n      isotrópicas en d dimensiones la std es 1/sqrt(d), así que var_floor es la fracción de esa\n      variación mínima exigida. Ataca el colapso constante (la cabeza da lo mismo para toda",
+        "detail": "modules.loss",
+        "documentation": {}
+    },
+    {
+        "label": "head_output_cka_loss",
+        "kind": 2,
+        "importPath": "modules.loss",
+        "description": "modules.loss",
+        "peekOfCode": "def head_output_cka_loss(head_outputs):\n    \"\"\"\n    CKA lineal media entre las salidas de los pares de cabezas. head_outputs: (N, H, d).\n    A diferencia del producto punto entre mapas de atención (por muestra), mide dependencia\n    estadística sobre el batch: 0 = salidas independientes (linealmente), 1 = idénticas salvo\n    rotación/escala. Es diferenciable y está en [0, 1].\n    \"\"\"\n    N, H, d = head_outputs.shape\n    if N < 3 or H < 2:\n        return head_outputs.sum() * 0.0",
+        "detail": "modules.loss",
         "documentation": {}
     },
     {
@@ -34899,16 +35378,7 @@
         "kind": 6,
         "importPath": "modules.training",
         "description": "modules.training",
-        "peekOfCode": "class Trainer:\n    \"\"\"\n    The simple trainer.\n    \"\"\"\n    def __init__(self, model, optimizer, loss_fn, exp_name, device, config, is_interpretable,\n                 lambda_loss=0.1, batch_size=None, lr=None, dataset=None, log_indices=None,\n                 base_dir=\"experiments\"):\n        self.model = model.to(device)\n        self.optimizer = optimizer\n        self.loss_fn = loss_fn",
-        "detail": "modules.training",
-        "documentation": {}
-    },
-    {
-        "label": "interpretability_loss",
-        "kind": 2,
-        "importPath": "modules.training",
-        "description": "modules.training",
-        "peekOfCode": "def interpretability_loss(attention_maps):\n    # attention_maps: (B, H, P) — atención del CLS hacia los parches por cada cabeza\n    B, H, P = attention_maps.shape\n    # Normalización L2 antes del producto punto entre cabezas.\n    # Así la similitud queda en [-1, 1] (similitud coseno) y no depende de la magnitud\n    # absoluta del vector de atención — evita que el modelo reduzca la loss\n    # simplemente achicando los valores de atención.\n    attention_maps = F.normalize(attention_maps, p=2, dim=-1)\n    # Producto punto entre todos los pares de cabezas (i, j) posición a posición\n    mm = torch.einsum('bhp,bkp->bhkp', attention_maps, attention_maps)",
+        "peekOfCode": "class Trainer:\n    \"\"\"\n    The simple trainer.\n    \"\"\"\n    def __init__(self, model, optimizer, loss_fn, exp_name, device, config, is_constrained,\n                 lambda_loss=0.1, batch_size=None, lr=None, dataset=None, log_indices=None,\n                 base_dir=\"experiments\", lambda_rank=0.0, rank_target=6.0, rank_on=\"head_output\",\n                 rank_params=(\"query\", \"key\"), var_floor=0.5, rank_tokens=\"cls\",\n                 mlflow_run_name=\"run-experiment\", mlflow_tags=None, mlflow_note=None, lambda_xcka=0.0):\n        self.model = model.to(device)",
         "detail": "modules.training",
         "documentation": {}
     },
@@ -34917,7 +35387,7 @@
         "kind": 5,
         "importPath": "modules.training",
         "description": "modules.training",
-        "peekOfCode": "logger = logging.getLogger(\"vit_training\")\ndef interpretability_loss(attention_maps):\n    # attention_maps: (B, H, P) — atención del CLS hacia los parches por cada cabeza\n    B, H, P = attention_maps.shape\n    # Normalización L2 antes del producto punto entre cabezas.\n    # Así la similitud queda en [-1, 1] (similitud coseno) y no depende de la magnitud\n    # absoluta del vector de atención — evita que el modelo reduzca la loss\n    # simplemente achicando los valores de atención.\n    attention_maps = F.normalize(attention_maps, p=2, dim=-1)\n    # Producto punto entre todos los pares de cabezas (i, j) posición a posición",
+        "peekOfCode": "logger = logging.getLogger(\"vit_training\")\nclass Trainer:\n    \"\"\"\n    The simple trainer.\n    \"\"\"\n    def __init__(self, model, optimizer, loss_fn, exp_name, device, config, is_constrained,\n                 lambda_loss=0.1, batch_size=None, lr=None, dataset=None, log_indices=None,\n                 base_dir=\"experiments\", lambda_rank=0.0, rank_target=6.0, rank_on=\"head_output\",\n                 rank_params=(\"query\", \"key\"), var_floor=0.5, rank_tokens=\"cls\",\n                 mlflow_run_name=\"run-experiment\", mlflow_tags=None, mlflow_note=None, lambda_xcka=0.0):",
         "detail": "modules.training",
         "documentation": {}
     },

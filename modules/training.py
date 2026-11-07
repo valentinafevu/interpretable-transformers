@@ -3,7 +3,7 @@ Pipeline de entrenamiento de `experimentation/training.ipynb`, empaquetado como 
 para poder reutilizarlo desde otros notebooks (p.ej. AwA2) sin copiar celdas.
 
 Diferencias respecto al notebook, todas de forma (no de comportamiento):
-- Los globals del notebook (`is_interpretable`, `lambda_loss`, `config`, `batch_size`, `lr`)
+- Los globals del notebook (`is_constrained`, `lambda_loss`, `config`, `batch_size`, `lr`)
   pasan a ser argumentos del Trainer.
 - Los batches pueden traer más de dos tensores (AwA2 devuelve (imagen, label, atributos));
   el Trainer usa solo los dos primeros.
@@ -14,44 +14,16 @@ import logging
 import matplotlib.pyplot as plt
 import mlflow
 import torch
-from torch.nn import functional as F
 from tqdm.auto import tqdm
 
 from .cka import linear_cka
 from .effective_rank import effective_rank
 from .experiments import save_checkpoint, save_experiment
+from .loss import (attention_entropy_loss, attention_rank_floor_loss, effective_rank_floor_loss,
+                   head_output_cka_loss, head_output_collapse_loss, interpretability_loss)
 from .visualizations import visualize_attention, visualize_attention_on_images
 
 logger = logging.getLogger("vit_training")
-
-
-def interpretability_loss(attention_maps):
-    # attention_maps: (B, H, P) — atención del CLS hacia los parches por cada cabeza
-
-    B, H, P = attention_maps.shape
-
-    # Normalización L2 antes del producto punto entre cabezas.
-    # Así la similitud queda en [-1, 1] (similitud coseno) y no depende de la magnitud
-    # absoluta del vector de atención — evita que el modelo reduzca la loss
-    # simplemente achicando los valores de atención.
-    attention_maps = F.normalize(attention_maps, p=2, dim=-1)
-
-    # Producto punto entre todos los pares de cabezas (i, j) posición a posición
-    mm = torch.einsum('bhp,bkp->bhkp', attention_maps, attention_maps)
-
-    # Máscara [H, H] → True en diagonal (no comparar cabeza consigo misma)
-    diag_mask = torch.eye(H, dtype=torch.bool, device=attention_maps.device)
-
-    # Anular la diagonal para que no contribuya a la loss
-    mm_masked = mm.clone()
-    mm_masked[:, diag_mask, :] = float(0)
-
-    mm_sum = mm_masked.sum(dim=(1, 2))   # (B, P)
-    mm_total = mm_sum.sum(dim=1)          # (B,)  una pérdida por imagen
-
-    # Reducir a escalar para que .backward() funcione.
-    # mean() mantiene la magnitud del gradiente independiente del batch size.
-    return mm_total.mean()
 
 
 class Trainer:
@@ -59,17 +31,48 @@ class Trainer:
     The simple trainer.
     """
 
-    def __init__(self, model, optimizer, loss_fn, exp_name, device, config, is_interpretable,
+    def __init__(self, model, optimizer, loss_fn, exp_name, device, config, is_constrained,
                  lambda_loss=0.1, batch_size=None, lr=None, dataset=None, log_indices=None,
-                 base_dir="experiments"):
+                 base_dir="experiments", lambda_rank=0.0, rank_target=6.0, rank_on="head_output",
+                 rank_params=("query", "key"), var_floor=0.5, rank_tokens="cls",
+                 mlflow_run_name="run-experiment", mlflow_tags=None, mlflow_note=None, lambda_xcka=0.0,
+                 rank_ceiling=False, lambda_entropy=0.0):
         self.model = model.to(device)
         self.optimizer = optimizer
         self.loss_fn = loss_fn
         self.exp_name = exp_name
         self.device = device
         self.config = config
-        self.is_interpretable = is_interpretable
+        self.is_constrained = is_constrained
         self.lambda_loss = lambda_loss
+        # Término anti-colapso (ver modules/loss.py); lambda_rank = 0 lo desactiva de la pérdida.
+        #   rank_on="head_output":   piso de varianza + rango efectivo sobre la salida de cada cabeza del
+        #                            último bloque (rank_tokens="cls" | "all"); rank_target <= head_size.
+        #   rank_on="attention_map": sobre la matriz (cabezas × parches) de atención del CLS; máx. = nº de cabezas.
+        #   rank_on="qk_weights":    sobre los pesos Q/K de la última capa (`rank_params`); máx. = head_size.
+        # Con rank_on="head_output" las métricas por cabeza se calculan y loguean SIEMPRE (también con
+        # lambda_rank = 0), para poder comparar contra el modelo sin el término.
+        assert rank_on in ("head_output", "attention_map", "qk_weights")
+        assert rank_tokens in ("cls", "all")
+        self.var_floor = var_floor
+        self.rank_ceiling = rank_ceiling   # True: el término de rango de head_output pasa de piso a techo (ver modules/loss.py)
+        # Penalización de CKA entre salidas de cabezas (requiere rank_on="head_output", que captura las salidas).
+        self.lambda_xcka = lambda_xcka
+        # Penalización de entropía de la atención del CLS (último bloque), normalizada en [0, 1]. Se suma a la
+        # pérdida total SIEMPRE que lambda_entropy > 0, también con is_constrained=False (variante "entropy":
+        # solo localización, sin penalizar similitud entre cabezas). La entropía y el nº efectivo de parches
+        # (exp(H)) por cabeza se calculan y loguean SIEMPRE (también con lambda_entropy = 0) para comparar
+        # contra los modelos sin el término.
+        self.lambda_entropy = lambda_entropy
+        assert lambda_xcka == 0 or rank_on == "head_output"
+        self.rank_tokens = rank_tokens
+        self.mlflow_run_name = mlflow_run_name
+        self.mlflow_tags = mlflow_tags or {}
+        self.mlflow_note = mlflow_note
+        self.lambda_rank = lambda_rank
+        self.rank_target = rank_target
+        self.rank_on = rank_on
+        self.rank_params = tuple(rank_params)
         self.batch_size = batch_size
         self.lr = lr
         self.dataset = dataset
@@ -77,16 +80,42 @@ class Trainer:
         self.base_dir = base_dir
         self.multi_label = getattr(dataset, "multi_label", False) if dataset is not None else False
 
+        # Salida de cada cabeza del último bloque, capturada con hooks (el modelo solo devuelve las
+        # probabilidades de atención).
+        self._head_outputs = {}
+        self._stats = {}
+        if self.rank_on == "head_output":
+            assert not config.get("use_faster_attention", False), "se necesitan cabezas separadas (attention.heads)"
+            heads = self.model.encoder.blocks[-1].attention.heads
+            for k, head in enumerate(heads):
+                head.register_forward_hook(lambda _m, _i, out, k=k: self._head_outputs.__setitem__(k, out[0]))
+
+    def _flush_stats(self, prefix, epoch_i):
+        for name, values in self._stats.items():
+            mlflow.log_metric(f"{prefix}{name}", sum(values) / len(values), step=epoch_i)
+        self._stats = {}
+
     def train(self, trainloader, testloader, epochs, save_model_every_n_epochs=0):
         logger.info(f"Iniciando entrenamiento '{self.exp_name}': {epochs} épocas, "
                     f"batch_size={self.batch_size}, lr={self.lr}, device={self.device}")
 
-        with mlflow.start_run(run_name="run-experiment"):
+        with mlflow.start_run(run_name=self.mlflow_run_name, description=self.mlflow_note):
+            if self.mlflow_tags:
+                mlflow.set_tags(self.mlflow_tags)
             mlflow.log_param("epochs", epochs)
             mlflow.log_param("batch_size", self.batch_size)
             mlflow.log_param("learning_rate", self.lr)
             mlflow.log_param("lambda_loss", self.lambda_loss)
-            mlflow.log_param("is_interpretable", self.is_interpretable)
+            mlflow.log_param("is_constrained", self.is_constrained)
+            mlflow.log_param("lambda_rank", self.lambda_rank)
+            mlflow.log_param("rank_target", self.rank_target)
+            mlflow.log_param("rank_on", self.rank_on)
+            mlflow.log_param("var_floor", self.var_floor)
+            mlflow.log_param("rank_ceiling", self.rank_ceiling)
+            mlflow.log_param("rank_tokens", self.rank_tokens)
+            mlflow.log_param("lambda_xcka", self.lambda_xcka)
+            mlflow.log_param("lambda_entropy", self.lambda_entropy)
+            mlflow.log_param("rank_params", ",".join(self.rank_params))
 
             epoch_bar = tqdm(range(epochs), desc="Épocas", unit="epoch")
             for i in epoch_bar:
@@ -121,21 +150,55 @@ class Trainer:
         # (atención del CLS hacia los parches, por cabeza) — no de los pesos de
         # Q/K/V, sino del objeto que la pérdida realmente ve.
         attn_erank_value = effective_rank(cls_attention).mean()
+        entropy_value, entropy_stats = attention_entropy_loss(cls_attention)
+        self._stats.setdefault("attention_entropy/mean", []).append(entropy_value.item())
+        self._stats.setdefault("attention_eff_patches/mean", []).append(entropy_stats["eff_patches"].mean().item())
+        for h in range(cls_attention.shape[1]):
+            self._stats.setdefault(f"attention_entropy/head_{h}", []).append(entropy_stats["entropy"][h].item())
+            self._stats.setdefault(f"attention_eff_patches/head_{h}", []).append(entropy_stats["eff_patches"][h].item())
         # BCEWithLogitsLoss (multi-label) espera targets float; CrossEntropyLoss (single-label) espera índices long.
         cls_loss = self.loss_fn(logits, labels.float() if self.multi_label else labels)
 
-        if self.is_interpretable:
-            total_loss = (1 - self.lambda_loss) * cls_loss + self.lambda_loss * interpretability_loss_value
+        # Término anti-colapso: solo entra a la pérdida total en el modo constrained y con lambda_rank > 0.
+        if self.rank_on == "head_output":
+            n_heads = len(self._head_outputs)
+            outs = torch.stack([self._head_outputs[k] for k in range(n_heads)], dim=1)   # (B, H, T, d)
+            if self.rank_tokens == "cls":
+                outs = outs[:, :, 0]                                                      # (B, H, d)
+            else:
+                outs = outs.permute(0, 2, 1, 3).reshape(-1, n_heads, outs.shape[-1])      # (B*T, H, d)
+            rank_loss_value, rank_stats = head_output_collapse_loss(outs, self.rank_target, self.var_floor, self.rank_ceiling)
+            xcka_value = head_output_cka_loss(outs)
+            self._stats.setdefault("head_output/cka_mean", []).append(xcka_value.item())
+            for h in range(n_heads):
+                self._stats.setdefault(f"head_output/erank/head_{h}", []).append(rank_stats["erank"][h].item())
+                self._stats.setdefault(f"head_output/std/head_{h}", []).append(rank_stats["std"][h].item())
+        elif self.lambda_rank > 0 and self.rank_on == "attention_map":
+            rank_loss_value = attention_rank_floor_loss(cls_attention, self.rank_target)
+        elif self.lambda_rank > 0:
+            rank_loss_value = effective_rank_floor_loss(self.model, self.rank_target, self.rank_params)
+        else:
+            rank_loss_value = torch.zeros((), device=logits.device)
+
+        if self.is_constrained:
+            total_loss = (1 - self.lambda_loss) * cls_loss + self.lambda_loss * interpretability_loss_value \
+                + self.lambda_rank * rank_loss_value
+            if self.lambda_xcka > 0:
+                total_loss = total_loss + self.lambda_xcka * xcka_value
         else:
             total_loss = cls_loss
-        return logits, cls_loss, interpretability_loss_value, attn_erank_value, total_loss
+        if self.lambda_entropy > 0:
+            total_loss = total_loss + self.lambda_entropy * entropy_value
+        return logits, cls_loss, interpretability_loss_value, attn_erank_value, rank_loss_value, total_loss
 
     def train_epoch(self, trainloader, epoch_i=0):
         self.model.train()
+        self._stats = {}
         losses = {
             "cls_loss": [],
             "interpretability_loss": [],
             "attn_erank": [],
+            "rank_loss": [],
             "total_loss": [],
         }
 
@@ -144,7 +207,7 @@ class Trainer:
             images, labels = batch[0].to(self.device), batch[1].to(self.device)
             self.optimizer.zero_grad()
 
-            _, cls_loss, interpretability_loss_value, attn_erank_value, total_loss = \
+            _, cls_loss, interpretability_loss_value, attn_erank_value, rank_loss_value, total_loss = \
                 self._step_losses(images, labels)
 
             total_loss.backward()
@@ -153,6 +216,7 @@ class Trainer:
             losses["cls_loss"].append(cls_loss.item())
             losses["interpretability_loss"].append(interpretability_loss_value.item())
             losses["attn_erank"].append(attn_erank_value.item())
+            losses["rank_loss"].append(rank_loss_value.item())
             losses["total_loss"].append(total_loss.item())
 
             batch_bar.set_postfix(loss=f"{total_loss.item():.4f}")
@@ -162,18 +226,22 @@ class Trainer:
         mlflow.log_metric("loss", avg["cls_loss"], step=epoch_i)
         mlflow.log_metric("interpretability_loss", avg["interpretability_loss"], step=epoch_i)
         mlflow.log_metric("effective_rank/attention_map/train_mean", avg["attn_erank"], step=epoch_i)
+        mlflow.log_metric("rank_loss", avg["rank_loss"], step=epoch_i)
         mlflow.log_metric("total_loss", avg["total_loss"], step=epoch_i)
+        self._flush_stats("train_", epoch_i)
 
         return avg
 
     @torch.no_grad()
     def evaluate(self, testloader, epoch_i=0):
         self.model.eval()
+        self._stats = {}
 
         losses = {
             "cls_loss": [],
             "interpretability_loss": [],
             "attn_erank": [],
+            "rank_loss": [],
             "total_loss": [],
         }
 
@@ -192,12 +260,13 @@ class Trainer:
         for batch in batch_bar:
             images, labels = batch[0].to(self.device), batch[1].to(self.device)
 
-            logits, cls_loss, interpretability_loss_value, attn_erank_value, total_loss = \
+            logits, cls_loss, interpretability_loss_value, attn_erank_value, rank_loss_value, total_loss = \
                 self._step_losses(images, labels)
 
             losses["cls_loss"].append(cls_loss.item())
             losses["interpretability_loss"].append(interpretability_loss_value.item())
             losses["attn_erank"].append(attn_erank_value.item())
+            losses["rank_loss"].append(rank_loss_value.item())
             losses["total_loss"].append(total_loss.item())
 
             if self.multi_label:
@@ -227,8 +296,10 @@ class Trainer:
         mlflow.log_metric("val_loss", avg["cls_loss"], step=epoch_i)
         mlflow.log_metric("val_interpretability_loss", avg["interpretability_loss"], step=epoch_i)
         mlflow.log_metric("effective_rank/attention_map/mean", avg["attn_erank"], step=epoch_i)
+        mlflow.log_metric("val_rank_loss", avg["rank_loss"], step=epoch_i)
         mlflow.log_metric("val_total_loss", avg["total_loss"], step=epoch_i)
         mlflow.log_metric("val_accuracy", accuracy, step=epoch_i)
+        self._flush_stats("val_", epoch_i)
 
         # Rango efectivo (Roy & Vetterli, 2007) de las matrices Q/K/V de cada cabeza
         # de la última capa de atención — señal de qué tan redundante es cada cabeza.
